@@ -13,7 +13,7 @@ export default function Navbar({ onResumeClick }: NavbarProps) {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
+      setIsScrolled(window.scrollY > 15);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -31,7 +31,7 @@ export default function Navbar({ onResumeClick }: NavbarProps) {
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
         isScrolled
-          ? "bg-[#090d16]/85 backdrop-blur-md border-b border-slate-800/80 shadow-lg shadow-black/20 py-3"
+          ? "bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm py-3"
           : "bg-transparent py-5"
       }`}
     >
@@ -40,37 +40,37 @@ export default function Navbar({ onResumeClick }: NavbarProps) {
           {/* Logo / Monogram */}
           <a
             href="#"
-            className="flex items-center gap-2.5 group focus:outline-none"
+            className="flex items-center gap-3 group focus:outline-none"
           >
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 via-indigo-600 to-cyan-400 p-[1.5px] shadow-md shadow-blue-500/20 group-hover:shadow-blue-500/40 transition-shadow">
-              <div className="w-full h-full bg-[#090d16] rounded-[10px] flex items-center justify-center font-bold text-white tracking-wider text-base font-mono">
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-600 p-[1.5px] shadow-sm">
+              <div className="w-full h-full bg-white rounded-[10px] flex items-center justify-center font-bold text-blue-700 tracking-wider text-base font-mono group-hover:bg-blue-50 transition-colors">
                 AK
               </div>
             </div>
             <div className="flex flex-col">
-              <span className="font-bold text-slate-100 tracking-tight text-lg group-hover:text-blue-400 transition-colors">
+              <span className="font-bold text-slate-900 tracking-tight text-lg group-hover:text-blue-600 transition-colors">
                 Abinanth K S
               </span>
-              <span className="text-xs text-slate-400 font-mono -mt-1">
+              <span className="text-xs text-slate-500 font-medium -mt-1">
                 Full-Stack Developer
               </span>
             </div>
           </a>
 
-          {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-1 bg-slate-900/60 p-1.5 rounded-full border border-slate-800/70 backdrop-blur-md">
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center gap-1 bg-white/95 px-3 py-1.5 rounded-full border border-slate-200 shadow-sm">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="px-4 py-1.5 text-sm font-medium text-slate-300 hover:text-white rounded-full hover:bg-slate-800/70 transition-all"
+                className="px-4 py-1.5 text-sm font-medium text-slate-600 hover:text-blue-600 rounded-full hover:bg-slate-50 transition-colors"
               >
                 {link.name}
               </a>
             ))}
             <button
               onClick={onResumeClick}
-              className="px-3.5 py-1.5 text-xs font-semibold text-blue-400 hover:text-blue-300 rounded-full hover:bg-blue-500/10 border border-blue-500/30 transition-all flex items-center gap-1.5 cursor-pointer ml-1"
+              className="px-3.5 py-1.5 text-xs font-semibold text-blue-700 hover:text-blue-800 rounded-full bg-blue-50 hover:bg-blue-100/80 border border-blue-200/80 transition-colors flex items-center gap-1.5 cursor-pointer ml-1"
             >
               <FileText className="w-3.5 h-3.5" />
               <span>Resume</span>
@@ -84,7 +84,7 @@ export default function Navbar({ onResumeClick }: NavbarProps) {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub Profile"
-              className="p-2 text-slate-400 hover:text-white hover:bg-slate-800/60 rounded-lg transition-colors border border-transparent hover:border-slate-700"
+              className="p-2 text-slate-500 hover:text-slate-900 hover:bg-slate-100 rounded-lg transition-colors border border-transparent hover:border-slate-200"
             >
               <Github className="w-5 h-5" />
             </a>
@@ -93,13 +93,13 @@ export default function Navbar({ onResumeClick }: NavbarProps) {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn Profile"
-              className="p-2 text-slate-400 hover:text-white hover:bg-slate-800/60 rounded-lg transition-colors border border-transparent hover:border-slate-700"
+              className="p-2 text-slate-500 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors border border-transparent hover:border-blue-100"
             >
               <Linkedin className="w-5 h-5" />
             </a>
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 shadow-md shadow-blue-500/20 hover:shadow-blue-500/35 transition-all transform hover:-translate-y-0.5 active:translate-y-0"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 shadow-sm hover:shadow transition-all transform hover:-translate-y-0.5 active:translate-y-0"
             >
               <Mail className="w-4 h-4" />
               <span>Let's Talk</span>
@@ -110,7 +110,7 @@ export default function Navbar({ onResumeClick }: NavbarProps) {
           <div className="flex md:hidden items-center gap-2">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors"
+              className="p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-colors"
               aria-label="Toggle navigation menu"
             >
               {mobileMenuOpen ? (
@@ -125,14 +125,14 @@ export default function Navbar({ onResumeClick }: NavbarProps) {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-b border-slate-800 bg-[#090d16]/98 backdrop-blur-xl px-5 pt-3 pb-6 mt-3 space-y-3">
+        <div className="md:hidden border-b border-slate-200 bg-white/98 backdrop-blur-xl px-5 pt-3 pb-6 mt-3 space-y-3 shadow-lg">
           <div className="flex flex-col space-y-1">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="px-3 py-2 text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800/60 rounded-lg transition-colors"
+                className="px-3 py-2 text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-blue-50/60 rounded-lg transition-colors"
               >
                 {link.name}
               </a>
@@ -142,20 +142,20 @@ export default function Navbar({ onResumeClick }: NavbarProps) {
                 setMobileMenuOpen(false);
                 if (onResumeClick) onResumeClick();
               }}
-              className="px-3 py-2 text-base font-medium text-blue-400 hover:text-white hover:bg-slate-800/60 rounded-lg transition-colors text-left flex items-center gap-2"
+              className="px-3 py-2 text-base font-medium text-blue-700 hover:bg-blue-50 rounded-lg transition-colors text-left flex items-center gap-2"
             >
               <FileText className="w-4 h-4" />
-              <span>View Resume (Modal)</span>
+              <span>View Resume (PDF)</span>
             </button>
           </div>
 
-          <div className="pt-3 border-t border-slate-800 flex items-center justify-between">
-            <div className="flex items-center gap-3">
+          <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
+            <div className="flex items-center gap-2">
               <a
                 href="https://github.com/Abinanth258"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 text-slate-400 hover:text-white bg-slate-800/60 rounded-lg"
+                className="p-2 text-slate-600 hover:text-slate-900 bg-slate-50 hover:bg-slate-100 rounded-lg border border-slate-200"
               >
                 <Github className="w-5 h-5" />
               </a>
@@ -163,7 +163,7 @@ export default function Navbar({ onResumeClick }: NavbarProps) {
                 href="https://www.linkedin.com/in/abinanth-k-s-8036a0342"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 text-slate-400 hover:text-white bg-slate-800/60 rounded-lg"
+                className="p-2 text-blue-600 hover:text-blue-700 bg-blue-50 hover:bg-blue-100 rounded-lg border border-blue-200"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
@@ -171,7 +171,7 @@ export default function Navbar({ onResumeClick }: NavbarProps) {
             <a
               href="#contact"
               onClick={() => setMobileMenuOpen(false)}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium text-white bg-blue-600 hover:bg-blue-500"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 shadow-sm"
             >
               <Mail className="w-4 h-4" />
               <span>Contact Me</span>

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth dark">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abinanth K S | Full-Stack Developer & Software Engineer</title>
+  <title>Abinanth K S | Full-Stack Developer</title>
   <meta name="description" content="Portfolio of Abinanth K S - Full-Stack Developer skilled in .NET, ASP.NET Core, SQL Server, Angular, React, and TypeScript. Engineering graduate from Anna University.">
 
   <!-- Tailwind CSS CDN -->
@@ -17,7 +17,6 @@
 
   <script>
     tailwind.config = {
-      darkMode: 'class',
       theme: {
         extend: {
           fontFamily: {
@@ -45,92 +44,77 @@
 
   <style>
     :root {
-      --background: #090d16;
-      --card-bg: rgba(15, 23, 42, 0.75);
-      --card-border: rgba(255, 255, 255, 0.08);
+      --background: #f8fafc;
+      --foreground: #0f172a;
     }
     body {
       background-color: var(--background);
-      color: #f1f5f9;
+      color: var(--foreground);
       overflow-x: hidden;
     }
-    .glass-panel {
-      background: var(--card-bg);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border: 1px solid var(--card-border);
-    }
-    .glass-panel-hover {
-      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .glass-panel-hover:hover {
-      border-color: rgba(99, 102, 241, 0.4);
-      transform: translateY(-4px);
-      box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.5), 0 0 20px 2px rgba(99, 102, 241, 0.15);
-    }
     .gradient-text {
-      background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 50%, #38bdf8 100%);
+      background: linear-gradient(135deg, #1d4ed8 0%, #4f46e5 50%, #0284c7 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-    .bg-grid-pattern {
-      background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px);
-      background-size: 32px 32px;
+    .bg-dot-pattern {
+      background-image: radial-gradient(#cbd5e1 1.2px, transparent 1.2px);
+      background-size: 24px 24px;
     }
     ::-webkit-scrollbar {
       width: 8px;
     }
     ::-webkit-scrollbar-track {
-      background: #090d16;
+      background: #f1f5f9;
     }
     ::-webkit-scrollbar-thumb {
-      background: #1e293b;
+      background: #cbd5e1;
       border-radius: 4px;
     }
     ::-webkit-scrollbar-thumb:hover {
-      background: #334155;
+      background: #94a3b8;
     }
   </style>
 </head>
-<body class="font-sans antialiased selection:bg-blue-500/30 selection:text-blue-200">
+<body class="font-sans antialiased selection:bg-blue-600 selection:text-white">
 
-  <!-- Background Ambience -->
-  <div class="fixed inset-0 bg-grid-pattern pointer-events-none opacity-40 z-0"></div>
-  <div class="fixed top-0 left-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-[120px] pointer-events-none z-0"></div>
-  <div class="fixed bottom-1/4 right-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-[140px] pointer-events-none z-0"></div>
+  <!-- Subtle Ambient Background -->
+  <div class="fixed inset-0 bg-dot-pattern pointer-events-none opacity-60 z-0"></div>
+  <div class="fixed top-0 left-1/3 w-[500px] h-[350px] bg-gradient-to-br from-blue-100/70 to-indigo-100/50 rounded-full blur-3xl pointer-events-none z-0"></div>
+  <div class="fixed bottom-1/4 right-1/4 w-[450px] h-[350px] bg-gradient-to-tr from-sky-100/60 to-emerald-100/40 rounded-full blur-3xl pointer-events-none z-0"></div>
 
   <div class="relative z-10 flex flex-col min-h-screen">
 
     <!-- NAVBAR -->
-    <header id="main-nav" class="fixed top-0 left-0 right-0 z-40 transition-all duration-300 bg-[#090d16]/85 backdrop-blur-md border-b border-slate-800/80 shadow-lg shadow-black/20 py-3.5">
+    <header id="main-nav" class="fixed top-0 left-0 right-0 z-40 transition-all duration-300 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm py-3.5">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between">
           <!-- Logo -->
-          <a href="#" class="flex items-center gap-2.5 group focus:outline-none">
-            <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 via-indigo-600 to-cyan-400 p-[1.5px] shadow-md shadow-blue-500/20 group-hover:shadow-blue-500/40 transition-shadow">
-              <div class="w-full h-full bg-[#090d16] rounded-[10px] flex items-center justify-center font-bold text-white tracking-wider text-base font-mono">
+          <a href="#" class="flex items-center gap-3 group focus:outline-none">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-600 p-[1.5px] shadow-sm">
+              <div class="w-full h-full bg-white rounded-[10px] flex items-center justify-center font-bold text-blue-700 tracking-wider text-base font-mono group-hover:bg-blue-50 transition-colors">
                 AK
               </div>
             </div>
             <div class="flex flex-col">
-              <span class="font-bold text-slate-100 tracking-tight text-lg group-hover:text-blue-400 transition-colors">
+              <span class="font-bold text-slate-900 tracking-tight text-lg group-hover:text-blue-600 transition-colors">
                 Abinanth K S
               </span>
-              <span class="text-xs text-slate-400 font-mono -mt-1">
+              <span class="text-xs text-slate-500 font-medium -mt-1">
                 Full-Stack Developer
               </span>
             </div>
           </a>
 
           <!-- Desktop Nav -->
-          <nav class="hidden md:flex items-center gap-1 bg-slate-900/60 p-1.5 rounded-full border border-slate-800/70 backdrop-blur-md">
-            <a href="#about" class="px-4 py-1.5 text-sm font-medium text-slate-300 hover:text-white rounded-full hover:bg-slate-800/70 transition-all">About</a>
-            <a href="#skills" class="px-4 py-1.5 text-sm font-medium text-slate-300 hover:text-white rounded-full hover:bg-slate-800/70 transition-all">Skills</a>
-            <a href="#experience" class="px-4 py-1.5 text-sm font-medium text-slate-300 hover:text-white rounded-full hover:bg-slate-800/70 transition-all">Experience</a>
-            <a href="#projects" class="px-4 py-1.5 text-sm font-medium text-slate-300 hover:text-white rounded-full hover:bg-slate-800/70 transition-all">Projects</a>
-            <a href="#contact" class="px-4 py-1.5 text-sm font-medium text-slate-300 hover:text-white rounded-full hover:bg-slate-800/70 transition-all">Contact</a>
+          <nav class="hidden md:flex items-center gap-1 bg-white/95 px-3 py-1.5 rounded-full border border-slate-200 shadow-sm">
+            <a href="#about" class="px-4 py-1.5 text-sm font-medium text-slate-600 hover:text-blue-600 rounded-full hover:bg-slate-50 transition-colors">About</a>
+            <a href="#skills" class="px-4 py-1.5 text-sm font-medium text-slate-600 hover:text-blue-600 rounded-full hover:bg-slate-50 transition-colors">Skills</a>
+            <a href="#experience" class="px-4 py-1.5 text-sm font-medium text-slate-600 hover:text-blue-600 rounded-full hover:bg-slate-50 transition-colors">Experience</a>
+            <a href="#projects" class="px-4 py-1.5 text-sm font-medium text-slate-600 hover:text-blue-600 rounded-full hover:bg-slate-50 transition-colors">Projects</a>
+            <a href="#contact" class="px-4 py-1.5 text-sm font-medium text-slate-600 hover:text-blue-600 rounded-full hover:bg-slate-50 transition-colors">Contact</a>
             
-            <button onclick="openResumeModal()" class="px-3.5 py-1.5 text-xs font-semibold text-blue-400 hover:text-blue-300 rounded-full hover:bg-blue-500/10 border border-blue-500/30 transition-all flex items-center gap-1.5 cursor-pointer ml-1">
+            <button onclick="openResumeModal()" class="px-3.5 py-1.5 text-xs font-semibold text-blue-700 hover:text-blue-800 rounded-full bg-blue-50 hover:bg-blue-100 border border-blue-200 transition-colors flex items-center gap-1.5 cursor-pointer ml-1">
               <i data-lucide="file-text" class="w-3.5 h-3.5"></i>
               <span>Resume</span>
             </button>
@@ -138,13 +122,13 @@
 
           <!-- Desktop CTA -->
           <div class="hidden md:flex items-center gap-3">
-            <a href="https://github.com/Abinanth258" target="_blank" rel="noopener noreferrer" class="p-2 text-slate-400 hover:text-white hover:bg-slate-800/60 rounded-lg transition-colors border border-transparent hover:border-slate-700" title="GitHub">
+            <a href="https://github.com/Abinanth258" target="_blank" rel="noopener noreferrer" class="p-2 text-slate-500 hover:text-slate-900 hover:bg-slate-100 rounded-lg transition-colors border border-transparent hover:border-slate-200" title="GitHub">
               <i data-lucide="github" class="w-5 h-5"></i>
             </a>
-            <a href="https://www.linkedin.com/in/abinanth-k-s-8036a0342" target="_blank" rel="noopener noreferrer" class="p-2 text-slate-400 hover:text-white hover:bg-slate-800/60 rounded-lg transition-colors border border-transparent hover:border-slate-700" title="LinkedIn">
+            <a href="https://www.linkedin.com/in/abinanth-k-s-8036a0342" target="_blank" rel="noopener noreferrer" class="p-2 text-slate-500 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors border border-transparent hover:border-blue-100" title="LinkedIn">
               <i data-lucide="linkedin" class="w-5 h-5"></i>
             </a>
-            <a href="#contact" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 shadow-md shadow-blue-500/20 hover:shadow-blue-500/35 transition-all transform hover:-translate-y-0.5">
+            <a href="#contact" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 shadow-sm transition-all transform hover:-translate-y-0.5">
               <i data-lucide="mail" class="w-4 h-4"></i>
               <span>Let's Talk</span>
             </a>
@@ -152,7 +136,7 @@
 
           <!-- Mobile Toggle -->
           <div class="flex md:hidden items-center gap-2">
-            <button id="mobile-toggle" class="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors">
+            <button id="mobile-toggle" class="p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-colors">
               <i data-lucide="menu" class="w-6 h-6"></i>
             </button>
           </div>
@@ -160,24 +144,24 @@
       </div>
 
       <!-- Mobile Dropdown -->
-      <div id="mobile-menu" class="hidden md:hidden border-b border-slate-800 bg-[#090d16]/98 px-5 pt-3 pb-6 mt-3 space-y-3">
+      <div id="mobile-menu" class="hidden md:hidden border-b border-slate-200 bg-white px-5 pt-3 pb-6 mt-3 space-y-3 shadow-lg">
         <div class="flex flex-col space-y-1">
-          <a href="#about" class="mobile-nav-link px-3 py-2 text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800/60 rounded-lg">About</a>
-          <a href="#skills" class="mobile-nav-link px-3 py-2 text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800/60 rounded-lg">Skills</a>
-          <a href="#experience" class="mobile-nav-link px-3 py-2 text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800/60 rounded-lg">Experience</a>
-          <a href="#projects" class="mobile-nav-link px-3 py-2 text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800/60 rounded-lg">Projects</a>
-          <a href="#contact" class="mobile-nav-link px-3 py-2 text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800/60 rounded-lg">Contact</a>
-          <button onclick="openResumeModal()" class="px-3 py-2 text-base font-medium text-blue-400 hover:text-white hover:bg-slate-800/60 rounded-lg text-left flex items-center gap-2">
+          <a href="#about" class="mobile-nav-link px-3 py-2 text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg">About</a>
+          <a href="#skills" class="mobile-nav-link px-3 py-2 text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg">Skills</a>
+          <a href="#experience" class="mobile-nav-link px-3 py-2 text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg">Experience</a>
+          <a href="#projects" class="mobile-nav-link px-3 py-2 text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg">Projects</a>
+          <a href="#contact" class="mobile-nav-link px-3 py-2 text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg">Contact</a>
+          <button onclick="openResumeModal()" class="px-3 py-2 text-base font-medium text-blue-700 hover:bg-blue-50 rounded-lg text-left flex items-center gap-2">
             <i data-lucide="file-text" class="w-4 h-4"></i>
-            <span>View Resume (Modal)</span>
+            <span>View Resume (PDF)</span>
           </button>
         </div>
-        <div class="pt-3 border-t border-slate-800 flex items-center justify-between">
-          <div class="flex items-center gap-3">
-            <a href="https://github.com/Abinanth258" target="_blank" class="p-2 text-slate-400 hover:text-white bg-slate-800/60 rounded-lg"><i data-lucide="github" class="w-5 h-5"></i></a>
-            <a href="https://www.linkedin.com/in/abinanth-k-s-8036a0342" target="_blank" class="p-2 text-slate-400 hover:text-white bg-slate-800/60 rounded-lg"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+        <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <a href="https://github.com/Abinanth258" target="_blank" class="p-2 text-slate-600 hover:text-slate-900 bg-slate-50 rounded-lg border border-slate-200"><i data-lucide="github" class="w-5 h-5"></i></a>
+            <a href="https://www.linkedin.com/in/abinanth-k-s-8036a0342" target="_blank" class="p-2 text-blue-600 hover:text-blue-700 bg-blue-50 rounded-lg border border-blue-200"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
           </div>
-          <a href="#contact" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium text-white bg-blue-600">Contact Me</a>
+          <a href="#contact" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold text-white bg-blue-600">Contact Me</a>
         </div>
       </div>
     </header>
@@ -189,116 +173,109 @@
           <!-- Left Column -->
           <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
             <!-- Availability Pill -->
-            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-950/60 border border-blue-500/30 text-blue-300 text-xs sm:text-sm font-medium backdrop-blur-md shadow-sm">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs sm:text-sm font-semibold shadow-sm">
               <span class="relative flex h-2.5 w-2.5">
                 <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-600"></span>
               </span>
-              <span>Available for Software Development Roles</span>
+              <span>Available for Software Engineering Roles</span>
             </div>
 
             <!-- Main Headline -->
-            <div class="space-y-2">
-              <p class="text-slate-400 font-mono text-sm tracking-widest uppercase">
-                Hello World, I'm
+            <div class="space-y-1">
+              <p className="text-blue-700 font-mono text-sm tracking-wider uppercase font-semibold">
+                Software Engineer
               </p>
-              <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
-                Abinanth <span class="gradient-text">K S</span>
+              <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-tight">
+                Hi, I'm <span class="gradient-text">Abinanth K S</span>
               </h1>
-              <h2 class="text-xl sm:text-2xl font-semibold text-slate-300 tracking-tight pt-1">
-                Full-Stack Developer & Software Engineer
+              <h2 class="text-xl sm:text-2xl font-bold text-slate-700 tracking-tight pt-1">
+                Full-Stack Developer • .NET, SQL, React & Angular
               </h2>
             </div>
 
             <!-- Description -->
-            <p class="text-base sm:text-lg text-slate-400 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-              Engineering graduate specializing in architecting resilient backends with
-              <span class="text-slate-200 font-semibold">.NET & SQL Server</span>, 
-              and crafting dynamic, responsive user experiences with 
-              <span class="text-slate-200 font-semibold">React, Angular & TypeScript</span>.
+            <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+              I build scalable backend services with <span class="text-slate-900 font-semibold">C#, ASP.NET Core & SQL Server</span>, and build responsive, accessible web interfaces with <span class="text-slate-900 font-semibold">React, TypeScript & Angular</span>. Engineering graduate from Anna University with hands-on enterprise internship experience at Techno Park.
             </p>
 
             <!-- Quick Badges -->
-            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-1 text-xs sm:text-sm text-slate-300">
-              <div class="flex items-center gap-1.5 bg-slate-900/70 border border-slate-800 px-3 py-1.5 rounded-lg">
-                <i data-lucide="map-pin" class="w-4 h-4 text-cyan-400"></i>
+            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-1 text-xs sm:text-sm text-slate-700">
+              <div class="flex items-center gap-1.5 bg-white border border-slate-200 px-3 py-1.5 rounded-lg shadow-sm">
+                <i data-lucide="map-pin" class="w-4 h-4 text-blue-600"></i>
                 <span>Nagercoil / Thuckalay, India</span>
               </div>
-              <div class="flex items-center gap-1.5 bg-slate-900/70 border border-slate-800 px-3 py-1.5 rounded-lg">
-                <i data-lucide="sparkles" class="w-4 h-4 text-amber-400"></i>
+              <div class="flex items-center gap-1.5 bg-white border border-slate-200 px-3 py-1.5 rounded-lg shadow-sm">
+                <i data-lucide="graduation-cap" class="w-4 h-4 text-amber-600"></i>
                 <span>B.E. Computer Science (2021-2025)</span>
               </div>
-              <div class="flex items-center gap-1.5 bg-slate-900/70 border border-slate-800 px-3 py-1.5 rounded-lg">
-                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i>
-                <span>Techno Park Experience</span>
+              <div class="flex items-center gap-1.5 bg-white border border-slate-200 px-3 py-1.5 rounded-lg shadow-sm">
+                <i data-lucide="briefcase" class="w-4 h-4 text-emerald-600"></i>
+                <span>Techno Park Intern</span>
               </div>
             </div>
 
             <!-- Action Buttons -->
-            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
-              <a href="#projects" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-white bg-blue-600 hover:bg-blue-500 shadow-lg shadow-blue-600/30 hover:shadow-blue-600/50 transition-all transform hover:-translate-y-0.5">
+            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3.5 pt-3">
+              <a href="#projects" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-white bg-blue-600 hover:bg-blue-700 shadow-sm hover:shadow transition-all transform hover:-translate-y-0.5">
                 <span>View Projects</span>
                 <i data-lucide="arrow-right" class="w-4 h-4"></i>
               </a>
 
-              <a href="#contact" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-slate-200 bg-slate-900/80 hover:bg-slate-800 border border-slate-700/80 hover:border-slate-600 transition-all transform hover:-translate-y-0.5">
-                <i data-lucide="mail" class="w-4 h-4 text-slate-400"></i>
+              <a href="#contact" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-slate-700 bg-white hover:bg-slate-50 border border-slate-200 shadow-sm transition-all transform hover:-translate-y-0.5">
+                <i data-lucide="mail" class="w-4 h-4 text-slate-500"></i>
                 <span>Get In Touch</span>
               </a>
 
-              <!-- Open Resume Modal Button -->
-              <button onclick="openResumeModal()" class="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl font-semibold text-slate-300 hover:text-white bg-slate-900/70 hover:bg-slate-800/90 border border-slate-800 hover:border-slate-700 transition-all cursor-pointer">
-                <i data-lucide="file-text" class="w-4 h-4 text-blue-400"></i>
+              <button onclick="openResumeModal()" class="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl font-semibold text-blue-700 bg-blue-50 hover:bg-blue-100 border border-blue-200 transition-all cursor-pointer">
+                <i data-lucide="file-text" class="w-4 h-4 text-blue-600"></i>
                 <span>View Resume</span>
               </button>
             </div>
 
             <!-- Connect Channels -->
-            <div class="pt-2 flex items-center justify-center lg:justify-start gap-5 text-slate-400">
-              <span class="text-xs font-mono uppercase tracking-wider text-slate-500">Connect:</span>
-              <a href="https://github.com/Abinanth258" target="_blank" class="hover:text-white transition-colors"><i data-lucide="github" class="w-5 h-5"></i></a>
-              <a href="https://www.linkedin.com/in/abinanth-k-s-8036a0342" target="_blank" class="hover:text-blue-400 transition-colors"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
-              <a href="mailto:abinanh258@gmail.com" class="hover:text-rose-400 transition-colors"><i data-lucide="mail" class="w-5 h-5"></i></a>
-              <a href="tel:+919444685963" class="hover:text-emerald-400 transition-colors"><i data-lucide="phone" class="w-5 h-5"></i></a>
+            <div class="pt-2 flex items-center justify-center lg:justify-start gap-4 text-slate-600">
+              <span class="text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold">Connect:</span>
+              <a href="https://github.com/Abinanth258" target="_blank" class="p-1.5 hover:text-slate-900 transition-colors"><i data-lucide="github" class="w-5 h-5"></i></a>
+              <a href="https://www.linkedin.com/in/abinanth-k-s-8036a0342" target="_blank" class="p-1.5 hover:text-blue-600 transition-colors"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+              <a href="mailto:abinanh258@gmail.com" class="p-1.5 hover:text-rose-600 transition-colors"><i data-lucide="mail" class="w-5 h-5"></i></a>
+              <a href="tel:+919444685963" class="p-1.5 hover:text-emerald-600 transition-colors"><i data-lucide="phone" class="w-5 h-5"></i></a>
             </div>
           </div>
 
           <!-- Right Column: Profile Photo Card -->
           <div class="lg:col-span-5 flex justify-center">
             <div class="relative group">
-              <!-- Glow -->
-              <div class="absolute -inset-1.5 bg-gradient-to-r from-blue-600 via-indigo-500 to-cyan-400 rounded-3xl blur-xl opacity-50 group-hover:opacity-80 transition duration-700"></div>
+              <div class="absolute -inset-2 bg-gradient-to-tr from-blue-500 via-indigo-400 to-sky-400 rounded-3xl blur-md opacity-30 group-hover:opacity-50 transition duration-500"></div>
 
-              <!-- Photo Card -->
-              <div class="relative rounded-2xl overflow-hidden bg-slate-900 border border-slate-700/80 p-2 shadow-2xl max-w-sm sm:max-w-md">
-                <div class="relative aspect-[3/4] w-72 sm:w-80 rounded-xl overflow-hidden bg-slate-950">
+              <div class="relative rounded-2xl overflow-hidden bg-white border-2 border-slate-200/80 p-2.5 shadow-xl max-w-sm sm:max-w-md">
+                <div class="relative aspect-[3/4] w-72 sm:w-80 rounded-xl overflow-hidden bg-slate-100">
                   <img src="./public/abinanth.jpg" alt="Abinanth K S" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
-                  <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none"></div>
+                  <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent pointer-events-none"></div>
 
                   <!-- Overlay Badge -->
-                  <div class="absolute bottom-3 left-3 right-3 p-3 rounded-xl bg-slate-900/90 backdrop-blur-md border border-slate-700/60 shadow-lg">
+                  <div class="absolute bottom-3 left-3 right-3 p-3 rounded-xl bg-white/95 backdrop-blur-md border border-slate-200 shadow-md">
                     <div class="flex items-center justify-between">
                       <div>
-                        <p class="text-xs font-semibold text-white">Abinanth K S</p>
-                        <p className="text-[11px] text-blue-400 font-mono">B.E. CSE | .NET & React</p>
+                        <p class="text-xs font-bold text-slate-900">Abinanth K S</p>
+                        <p class="text-[11px] text-blue-700 font-medium">Full-Stack Engineer</p>
                       </div>
-                      <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-blue-500/20 text-blue-300 border border-blue-500/30">
-                        2025 Grad
+                      <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-blue-50 text-blue-700 border border-blue-200">
+                        Anna Univ '25
                       </span>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <!-- Accent Floating Badges -->
-              <div class="hidden sm:flex absolute -top-4 -right-4 bg-slate-900/90 border border-slate-700/80 px-3 py-1.5 rounded-xl shadow-lg backdrop-blur-md items-center gap-2">
-                <span class="h-2 w-2 rounded-full bg-cyan-400 animate-pulse"></span>
-                <span class="text-xs font-medium text-slate-200">ASP.NET Core & Angular</span>
+              <div class="hidden sm:flex absolute -top-3 -right-3 bg-white border border-slate-200 px-3 py-1.5 rounded-xl shadow-md items-center gap-2">
+                <span class="h-2 w-2 rounded-full bg-blue-600"></span>
+                <span class="text-xs font-semibold text-slate-800">ASP.NET Core & Angular</span>
               </div>
 
-              <div class="hidden sm:flex absolute -bottom-3 -left-4 bg-slate-900/90 border border-slate-700/80 px-3 py-1.5 rounded-xl shadow-lg backdrop-blur-md items-center gap-2">
-                <span class="h-2 w-2 rounded-full bg-indigo-400"></span>
-                <span class="text-xs font-medium text-slate-200">SQL Server & REST APIs</span>
+              <div class="hidden sm:flex absolute -bottom-3 -left-3 bg-white border border-slate-200 px-3 py-1.5 rounded-xl shadow-md items-center gap-2">
+                <span class="h-2 w-2 rounded-full bg-emerald-600"></span>
+                <span class="text-xs font-semibold text-slate-800">SQL Server & REST APIs</span>
               </div>
             </div>
           </div>
@@ -307,74 +284,74 @@
     </section>
 
     <!-- ABOUT SECTION -->
-    <section id="about" class="py-20 relative border-t border-slate-800/80">
+    <section id="about" class="py-20 relative border-t border-slate-200/80 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <p class="text-blue-400 font-mono text-sm tracking-wider uppercase font-semibold">Background & Purpose</p>
-          <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">About <span class="gradient-text">Me</span></h2>
-          <p class="text-slate-400 text-base sm:text-lg">
-            Engineering graduate passionate about building reliable software, connecting resilient backend services with sleek, accessible user interfaces.
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-2">
+          <p class="text-blue-600 font-mono text-sm tracking-wider uppercase font-semibold">Background & Foundation</p>
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900">About <span class="gradient-text">Me</span></h2>
+          <p class="text-slate-600 text-base sm:text-lg">
+            Engineering graduate passionate about solving real problems with reliable software, bridging backend architecture with intuitive frontend interfaces.
           </p>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-16">
           <!-- Story -->
-          <div class="lg:col-span-7 glass-panel p-6 sm:p-8 rounded-2xl space-y-4">
-            <h3 class="text-xl font-bold text-white flex items-center gap-2">
-              <span class="w-2 h-6 bg-blue-500 rounded-full inline-block"></span>
-              Engineering Philosophy & Drive
+          <div class="lg:col-span-7 bg-slate-50 border border-slate-200/90 p-6 sm:p-8 rounded-2xl space-y-4 shadow-sm">
+            <h3 class="text-xl font-bold text-slate-900 flex items-center gap-2">
+              <span class="w-2 h-6 bg-blue-600 rounded-full inline-block"></span>
+              Engineering Journey
             </h3>
-            <p class="text-slate-300 leading-relaxed text-sm sm:text-base">
-              I am a Computer Science graduate from <span class="text-white font-medium">Anna University</span> with a hands-on track record in full-stack engineering. During my internships at <span class="text-white font-medium">Techno Park, Trivandrum</span>, I worked directly on production-grade systems—from designing RESTful APIs in <span class="text-blue-400 font-mono">ASP.NET Core</span> and structuring complex relational models in <span class="text-blue-400 font-mono">SQL Server</span>, to building dynamic user interfaces in <span class="text-cyan-400 font-mono">Angular</span> and <span class="text-cyan-400 font-mono">React.js</span>.
+            <p class="text-slate-700 leading-relaxed text-sm sm:text-base">
+              I graduated in Computer Science & Engineering from <span class="text-slate-900 font-semibold">Anna University</span> with a strong passion for building practical, production-ready software. During my internship work at <span class="text-slate-900 font-semibold">Techno Park, Trivandrum</span>, I gained direct experience developing full-stack applications—from architecting RESTful APIs in <span class="font-semibold text-blue-700 font-mono">ASP.NET Core</span> and managing databases in <span class="font-semibold text-blue-700 font-mono">SQL Server</span>, to building dynamic user interfaces in <span class="font-semibold text-indigo-700 font-mono">Angular</span> and <span class="font-semibold text-indigo-700 font-mono">React.js</span>.
             </p>
-            <p class="text-slate-400 leading-relaxed text-sm sm:text-base">
-              Whether architecting a secure Hospital Management System with role-based access control or engineering a real-time carpooling mobile app with React Native and Firebase, I emphasize scalability, clean code patterns, and an intuitive user experience.
+            <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+              Whether developing an enterprise Hospital Management System with strict role-based permissions or engineering a cross-platform carpooling mobile app with React Native and Firebase, I focus on clear architecture, security, and delivering an intuitive experience for users.
             </p>
-            <div class="pt-2 flex flex-wrap gap-2 text-xs font-mono text-slate-300">
-              <span class="px-3 py-1 rounded-md bg-slate-800/80 border border-slate-700/60">#OOP</span>
-              <span class="px-3 py-1 rounded-md bg-slate-800/80 border border-slate-700/60">#CleanArchitecture</span>
-              <span class="px-3 py-1 rounded-md bg-slate-800/80 border border-slate-700/60">#RESTfulAPIs</span>
-              <span class="px-3 py-1 rounded-md bg-slate-800/80 border border-slate-700/60">#ProblemSolving</span>
+            <div class="pt-2 flex flex-wrap gap-2 text-xs font-mono font-medium text-slate-700">
+              <span class="px-3 py-1 rounded-md bg-white border border-slate-200 shadow-xs">#FullStack</span>
+              <span class="px-3 py-1 rounded-md bg-white border border-slate-200 shadow-xs">#DotNetCore</span>
+              <span class="px-3 py-1 rounded-md bg-white border border-slate-200 shadow-xs">#SQLServer</span>
+              <span class="px-3 py-1 rounded-md bg-white border border-slate-200 shadow-xs">#ReactAndAngular</span>
             </div>
           </div>
 
           <!-- Education Cards -->
           <div class="lg:col-span-5 space-y-4">
-            <h3 class="text-lg font-bold text-slate-200 flex items-center gap-2 mb-2">
-              <i data-lucide="graduation-cap" class="w-5 h-5 text-blue-400"></i>
-              Education Journey
+            <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2 mb-1">
+              <i data-lucide="graduation-cap" class="w-5 h-5 text-blue-600"></i>
+              Education
             </h3>
 
             <!-- College -->
-            <div class="glass-panel p-5 rounded-xl border border-slate-800 hover:border-blue-500/40 transition-colors">
+            <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm hover:border-blue-300 transition-colors">
               <div class="flex items-start justify-between gap-2">
                 <div>
-                  <h4 class="font-semibold text-white text-base">St. Xavier’s Catholic College of Engineering</h4>
-                  <p class="text-xs text-blue-400 font-mono mt-0.5">Anna University</p>
+                  <h4 class="font-bold text-slate-900 text-base">St. Xavier’s Catholic College of Engineering</h4>
+                  <p class="text-xs text-blue-600 font-mono mt-0.5 font-semibold">Anna University</p>
                 </div>
-                <span class="text-xs font-mono px-2 py-1 bg-slate-800 rounded text-slate-300 border border-slate-700/80 whitespace-nowrap">2021 – 2025</span>
+                <span class="text-xs font-mono px-2 py-1 bg-slate-100 rounded text-slate-700 border border-slate-200 whitespace-nowrap font-medium">2021 – 2025</span>
               </div>
-              <p class="text-sm text-slate-300 mt-2">
-                Bachelor of Engineering in <span class="text-white font-medium">Computer Science & Engineering</span>
+              <p class="text-sm text-slate-700 mt-2 font-medium">
+                Bachelor of Engineering in Computer Science & Engineering
               </p>
-              <p class="text-xs text-slate-400 mt-1.5 flex items-center gap-1.5">
-                <i data-lucide="award" class="w-3.5 h-3.5 text-amber-400 flex-shrink-0"></i>
-                <span>Final Year: Carpooling App (React Native & Firebase)</span>
+              <p class="text-xs text-slate-500 mt-1.5 flex items-center gap-1.5">
+                <i data-lucide="award" class="w-3.5 h-3.5 text-amber-500 flex-shrink-0"></i>
+                <span>Final Year: RideCircle Mobile App (React Native & Firebase)</span>
               </p>
             </div>
 
             <!-- School -->
-            <div class="glass-panel p-5 rounded-xl border border-slate-800 hover:border-blue-500/40 transition-colors">
+            <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm hover:border-blue-300 transition-colors">
               <div class="flex items-start justify-between gap-2">
                 <div>
-                  <h4 class="font-semibold text-white text-base">R.P.R. Hindu Vidyalaya Hr. Sec. School</h4>
-                  <p class="text-xs text-slate-400 font-mono mt-0.5">Thuckalay, Kanyakumari</p>
+                  <h4 class="font-bold text-slate-900 text-base">R.P.R. Hindu Vidyalaya Hr. Sec. School</h4>
+                  <p class="text-xs text-slate-500 font-mono mt-0.5">Thuckalay, Kanyakumari</p>
                 </div>
-                <span class="text-xs font-mono px-2 py-1 bg-slate-800 rounded text-slate-300 border border-slate-700/80 whitespace-nowrap">2019 – 2021</span>
+                <span class="text-xs font-mono px-2 py-1 bg-slate-100 rounded text-slate-700 border border-slate-200 whitespace-nowrap font-medium">2019 – 2021</span>
               </div>
-              <div class="mt-3 flex items-center gap-4 text-xs font-mono">
-                <span class="px-2.5 py-1 bg-emerald-950/40 border border-emerald-500/30 text-emerald-300 rounded">HSC: 76%</span>
-                <span class="px-2.5 py-1 bg-blue-950/40 border border-blue-500/30 text-blue-300 rounded">SSC: 75%</span>
+              <div class="mt-3 flex items-center gap-3 text-xs font-mono font-medium">
+                <span class="px-2.5 py-1 bg-emerald-50 border border-emerald-200 text-emerald-800 rounded">HSC: 76%</span>
+                <span class="px-2.5 py-1 bg-blue-50 border border-blue-200 text-blue-800 rounded">SSC: 75%</span>
               </div>
             </div>
           </div>
@@ -382,42 +359,42 @@
 
         <!-- 4 Core Pillars -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div class="glass-panel glass-panel-hover p-6 rounded-2xl space-y-3">
-            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center">
-              <i data-lucide="layers" class="w-6 h-6 text-blue-400"></i>
+          <div class="bg-slate-50/80 p-6 rounded-2xl border border-slate-200/80 shadow-xs hover:bg-white hover:border-slate-300 hover:shadow-md transition-all duration-300 space-y-3">
+            <div class="w-11 h-11 rounded-xl bg-blue-50 border border-blue-200 flex items-center justify-center">
+              <i data-lucide="layers" class="w-5 h-5 text-blue-600"></i>
             </div>
-            <h4 class="font-semibold text-white text-base">Clean Layered Architecture</h4>
-            <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
-              Applying Controller-Service-Repository patterns ensuring testability, maintainability, and clean code separation.
+            <h4 class="font-bold text-slate-900 text-base">Clean Architecture</h4>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Applying Controller-Service-Repository patterns ensuring testability, maintainability, and clean code.
             </p>
           </div>
 
-          <div class="glass-panel glass-panel-hover p-6 rounded-2xl space-y-3">
-            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center">
-              <i data-lucide="shield-check" class="w-6 h-6 text-emerald-400"></i>
+          <div class="bg-slate-50/80 p-6 rounded-2xl border border-slate-200/80 shadow-xs hover:bg-white hover:border-slate-300 hover:shadow-md transition-all duration-300 space-y-3">
+            <div class="w-11 h-11 rounded-xl bg-emerald-50 border border-emerald-200 flex items-center justify-center">
+              <i data-lucide="shield-check" class="w-5 h-5 text-emerald-600"></i>
             </div>
-            <h4 class="font-semibold text-white text-base">Security & RBAC</h4>
-            <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+            <h4 class="font-bold text-slate-900 text-base">Security & RBAC</h4>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
               Implementing JWT authentication and Role-Based Access Control to ensure robust, enterprise-grade endpoints.
             </p>
           </div>
 
-          <div class="glass-panel glass-panel-hover p-6 rounded-2xl space-y-3">
-            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center">
-              <i data-lucide="zap" class="w-6 h-6 text-amber-400"></i>
+          <div class="bg-slate-50/80 p-6 rounded-2xl border border-slate-200/80 shadow-xs hover:bg-white hover:border-slate-300 hover:shadow-md transition-all duration-300 space-y-3">
+            <div class="w-11 h-11 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-center">
+              <i data-lucide="database" class="w-5 h-5 text-amber-600"></i>
             </div>
-            <h4 class="font-semibold text-white text-base">High-Efficiency Databases</h4>
-            <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
-              Designing relational schemas, optimizing stored procedures, and managing ORM workflows with SQL Server.
+            <h4 class="font-bold text-slate-900 text-base">Relational Databases</h4>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Designing normalized schemas, optimizing stored procedures, and managing ORM workflows with SQL Server.
             </p>
           </div>
 
-          <div class="glass-panel glass-panel-hover p-6 rounded-2xl space-y-3">
-            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center">
-              <i data-lucide="code-2" class="w-6 h-6 text-cyan-400"></i>
+          <div class="bg-slate-50/80 p-6 rounded-2xl border border-slate-200/80 shadow-xs hover:bg-white hover:border-slate-300 hover:shadow-md transition-all duration-300 space-y-3">
+            <div class="w-11 h-11 rounded-xl bg-indigo-50 border border-indigo-200 flex items-center justify-center">
+              <i data-lucide="code-2" class="w-5 h-5 text-indigo-600"></i>
             </div>
-            <h4 class="font-semibold text-white text-base">Modern Reactive Frontend</h4>
-            <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+            <h4 class="font-bold text-slate-900 text-base">Modern Frontend</h4>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
               Crafting responsive interfaces with React, Angular, and modern CSS, backed by strong component modularity.
             </p>
           </div>
@@ -426,83 +403,83 @@
     </section>
 
     <!-- SKILLS SECTION -->
-    <section id="skills" class="py-20 relative border-t border-slate-800/80">
+    <section id="skills" class="py-20 relative border-t border-slate-200/80 bg-slate-50/50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
-          <p class="text-cyan-400 font-mono text-sm tracking-wider uppercase font-semibold">Technical Stack</p>
-          <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">Skills & <span class="gradient-text">Technologies</span></h2>
-          <p class="text-slate-400 text-base sm:text-lg">
-            A comprehensive overview of the programming languages, frameworks, and developer tooling I leverage.
+        <div class="text-center max-w-3xl mx-auto mb-12 space-y-2">
+          <p class="text-blue-600 font-mono text-sm tracking-wider uppercase font-semibold">Technical Repertoire</p>
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900">Skills & <span class="gradient-text">Technologies</span></h2>
+          <p class="text-slate-600 text-base sm:text-lg">
+            A comprehensive look at the languages, frameworks, and developer tools I leverage.
           </p>
         </div>
 
         <!-- Skills Cards -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <!-- Backend -->
-          <div class="glass-panel p-6 sm:p-7 rounded-2xl space-y-5 border border-slate-800/90">
-            <div class="flex items-center gap-3 pb-3 border-b border-slate-800">
-              <div class="p-2 rounded-xl bg-slate-900 border border-slate-800"><i data-lucide="server" class="w-5 h-5 text-blue-400"></i></div>
-              <h3 class="text-lg font-bold text-white">Backend & Frameworks</h3>
+          <div class="bg-white p-6 sm:p-7 rounded-2xl border border-slate-200 shadow-sm space-y-5">
+            <div class="flex items-center gap-3 pb-3 border-b border-slate-100">
+              <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-200"><i data-lucide="server" class="w-5 h-5 text-blue-600"></i></div>
+              <h3 class="text-lg font-bold text-slate-900">Backend & Languages</h3>
             </div>
             <div class="flex flex-wrap gap-2.5">
-              <span class="px-3 py-2 rounded-xl text-xs font-medium bg-slate-900/90 text-slate-100 border border-blue-500/40 font-mono flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>C# • Proficient</span>
-              <span class="px-3 py-2 rounded-xl text-xs font-medium bg-slate-900/90 text-slate-100 border border-blue-500/40 font-mono flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>ASP.NET Core Web API</span>
-              <span class="px-3 py-2 rounded-xl text-xs font-medium bg-slate-900/60 text-slate-300 border border-slate-800 font-mono">ASP.NET Core MVC</span>
-              <span class="px-3 py-2 rounded-xl text-xs font-medium bg-slate-900/90 text-slate-100 border border-blue-500/40 font-mono">ADO.NET</span>
-              <span class="px-3 py-2 rounded-xl text-xs font-medium bg-slate-900/90 text-slate-100 border border-blue-500/40 font-mono">Entity Framework Core</span>
-              <span class="px-3 py-2 rounded-xl text-xs font-medium bg-slate-900/90 text-slate-100 border border-blue-500/40 font-mono">RESTful APIs</span>
-              <span class="px-3 py-2 rounded-xl text-xs font-medium bg-slate-900/60 text-slate-300 border border-slate-800 font-mono">Python</span>
-              <span class="px-3 py-2 rounded-xl text-xs font-medium bg-slate-900/60 text-slate-300 border border-slate-800 font-mono">OOPs & Model Binding</span>
+              <span class="px-3 py-2 rounded-xl text-xs font-semibold bg-blue-50 text-blue-900 border border-blue-200 font-mono flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>C# • Proficient</span>
+              <span class="px-3 py-2 rounded-xl text-xs font-semibold bg-blue-50 text-blue-900 border border-blue-200 font-mono flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>ASP.NET Core Web API</span>
+              <span class="px-3 py-2 rounded-xl text-xs font-semibold bg-blue-50/70 text-blue-900 border border-blue-200 font-mono">ASP.NET Core MVC</span>
+              <span class="px-3 py-2 rounded-xl text-xs font-semibold bg-blue-50 text-blue-900 border border-blue-200 font-mono">ADO.NET</span>
+              <span class="px-3 py-2 rounded-xl text-xs font-semibold bg-blue-50 text-blue-900 border border-blue-200 font-mono">Entity Framework Core</span>
+              <span class="px-3 py-2 rounded-xl text-xs font-semibold bg-blue-50 text-blue-900 border border-blue-200 font-mono">RESTful APIs</span>
+              <span class="px-3 py-2 rounded-xl text-xs font-semibold bg-blue-50/70 text-blue-900 border border-blue-200 font-mono">Python</span>
+              <span class="px-3 py-2 rounded-xl text-xs font-semibold bg-blue-50/70 text-blue-900 border border-blue-200 font-mono">OOP & Model Binding</span>
             </div>
           </div>
 
           <!-- Frontend -->
-          <div class="glass-panel p-6 sm:p-7 rounded-2xl space-y-5 border border-slate-800/90">
-            <div class="flex items-center gap-3 pb-3 border-b border-slate-800">
-              <div class="p-2 rounded-xl bg-slate-900 border border-slate-800"><i data-lucide="layout" class="w-5 h-5 text-cyan-400"></i></div>
-              <h3 class="text-lg font-bold text-white">Frontend & Mobile</h3>
+          <div class="bg-white p-6 sm:p-7 rounded-2xl border border-slate-200 shadow-sm space-y-5">
+            <div class="flex items-center gap-3 pb-3 border-b border-slate-100">
+              <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-200"><i data-lucide="layout" class="w-5 h-5 text-indigo-600"></i></div>
+              <h3 class="text-lg font-bold text-slate-900">Frontend & Mobile</h3>
             </div>
             <div class="flex flex-wrap gap-2.5">
-              <span class="px-3 py-2 rounded-xl text-xs font-medium bg-slate-900/90 text-slate-100 border border-blue-500/40 font-mono flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>React.js • Proficient</span>
-              <span class="px-3 py-2 rounded-xl text-xs font-medium bg-slate-900/90 text-slate-100 border border-blue-500/40 font-mono flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>TypeScript</span>
-              <span class="px-3 py-2 rounded-xl text-xs font-medium bg-slate-900/90 text-slate-100 border border-blue-500/40 font-mono">JavaScript (ES6+)</span>
-              <span class="px-3 py-2 rounded-xl text-xs font-medium bg-slate-900/90 text-slate-100 border border-blue-500/40 font-mono">Angular</span>
-              <span class="px-3 py-2 rounded-xl text-xs font-medium bg-slate-900/90 text-slate-100 border border-blue-500/40 font-mono">React Native</span>
-              <span class="px-3 py-2 rounded-xl text-xs font-medium bg-slate-900/60 text-slate-300 border border-slate-800 font-mono">Next.js</span>
-              <span class="px-3 py-2 rounded-xl text-xs font-medium bg-slate-900/90 text-slate-100 border border-blue-500/40 font-mono">Tailwind CSS</span>
-              <span class="px-3 py-2 rounded-xl text-xs font-medium bg-slate-900/60 text-slate-300 border border-slate-800 font-mono">Bootstrap & HTML5/CSS3</span>
+              <span class="px-3 py-2 rounded-xl text-xs font-semibold bg-indigo-50 text-indigo-900 border border-indigo-200 font-mono flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-indigo-600"></span>React.js • Proficient</span>
+              <span class="px-3 py-2 rounded-xl text-xs font-semibold bg-indigo-50 text-indigo-900 border border-indigo-200 font-mono flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-indigo-600"></span>TypeScript</span>
+              <span class="px-3 py-2 rounded-xl text-xs font-semibold bg-indigo-50 text-indigo-900 border border-indigo-200 font-mono">JavaScript (ES6+)</span>
+              <span class="px-3 py-2 rounded-xl text-xs font-semibold bg-indigo-50 text-indigo-900 border border-indigo-200 font-mono">Angular</span>
+              <span class="px-3 py-2 rounded-xl text-xs font-semibold bg-indigo-50 text-indigo-900 border border-indigo-200 font-mono">React Native</span>
+              <span class="px-3 py-2 rounded-xl text-xs font-semibold bg-indigo-50/70 text-indigo-900 border border-indigo-200 font-mono">Next.js</span>
+              <span class="px-3 py-2 rounded-xl text-xs font-semibold bg-indigo-50 text-indigo-900 border border-indigo-200 font-mono">Tailwind CSS</span>
+              <span class="px-3 py-2 rounded-xl text-xs font-semibold bg-indigo-50/70 text-indigo-900 border border-indigo-200 font-mono">Bootstrap & CSS3</span>
             </div>
           </div>
 
           <!-- Database -->
-          <div class="glass-panel p-6 sm:p-7 rounded-2xl space-y-5 border border-slate-800/90">
-            <div class="flex items-center gap-3 pb-3 border-b border-slate-800">
-              <div class="p-2 rounded-xl bg-slate-900 border border-slate-800"><i data-lucide="database" class="w-5 h-5 text-indigo-400"></i></div>
-              <h3 class="text-lg font-bold text-white">Database & Cloud</h3>
+          <div class="bg-white p-6 sm:p-7 rounded-2xl border border-slate-200 shadow-sm space-y-5">
+            <div class="flex items-center gap-3 pb-3 border-b border-slate-100">
+              <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-200"><i data-lucide="database" class="w-5 h-5 text-emerald-600"></i></div>
+              <h3 class="text-lg font-bold text-slate-900">Databases & Cloud</h3>
             </div>
             <div class="flex flex-wrap gap-2.5">
-              <span class="px-3 py-2 rounded-xl text-xs font-medium bg-slate-900/90 text-slate-100 border border-blue-500/40 font-mono flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>SQL Server (SSMS)</span>
-              <span class="px-3 py-2 rounded-xl text-xs font-medium bg-slate-900/90 text-slate-100 border border-blue-500/40 font-mono">Stored Procedures</span>
-              <span class="px-3 py-2 rounded-xl text-xs font-medium bg-slate-900/60 text-slate-300 border border-slate-800 font-mono">MySQL</span>
-              <span class="px-3 py-2 rounded-xl text-xs font-medium bg-slate-900/90 text-slate-100 border border-blue-500/40 font-mono">Firebase Firestore</span>
-              <span class="px-3 py-2 rounded-xl text-xs font-medium bg-slate-900/60 text-slate-300 border border-slate-800 font-mono">Firebase Realtime DB</span>
-              <span class="px-3 py-2 rounded-xl text-xs font-medium bg-slate-900/60 text-slate-300 border border-slate-800 font-mono">Relational Schema Design</span>
+              <span class="px-3 py-2 rounded-xl text-xs font-semibold bg-emerald-50 text-emerald-900 border border-emerald-200 font-mono flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>SQL Server (SSMS)</span>
+              <span class="px-3 py-2 rounded-xl text-xs font-semibold bg-emerald-50 text-emerald-900 border border-emerald-200 font-mono">Stored Procedures</span>
+              <span class="px-3 py-2 rounded-xl text-xs font-semibold bg-emerald-50/70 text-emerald-900 border border-emerald-200 font-mono">MySQL</span>
+              <span class="px-3 py-2 rounded-xl text-xs font-semibold bg-emerald-50 text-emerald-900 border border-emerald-200 font-mono">Firebase Firestore</span>
+              <span class="px-3 py-2 rounded-xl text-xs font-semibold bg-emerald-50/70 text-emerald-900 border border-emerald-200 font-mono">Firebase Realtime DB</span>
+              <span class="px-3 py-2 rounded-xl text-xs font-semibold bg-emerald-50/70 text-emerald-900 border border-emerald-200 font-mono">Schema Architecture</span>
             </div>
           </div>
 
           <!-- Tools -->
-          <div class="glass-panel p-6 sm:p-7 rounded-2xl space-y-5 border border-slate-800/90">
-            <div class="flex items-center gap-3 pb-3 border-b border-slate-800">
-              <div class="p-2 rounded-xl bg-slate-900 border border-slate-800"><i data-lucide="wrench" class="w-5 h-5 text-emerald-400"></i></div>
-              <h3 class="text-lg font-bold text-white">Tools & Practices</h3>
+          <div class="bg-white p-6 sm:p-7 rounded-2xl border border-slate-200 shadow-sm space-y-5">
+            <div class="flex items-center gap-3 pb-3 border-b border-slate-100">
+              <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-200"><i data-lucide="wrench" class="w-5 h-5 text-amber-600"></i></div>
+              <h3 class="text-lg font-bold text-slate-900">Tools & Practices</h3>
             </div>
             <div class="flex flex-wrap gap-2.5">
-              <span class="px-3 py-2 rounded-xl text-xs font-medium bg-slate-900/90 text-slate-100 border border-blue-500/40 font-mono">Visual Studio</span>
-              <span class="px-3 py-2 rounded-xl text-xs font-medium bg-slate-900/90 text-slate-100 border border-blue-500/40 font-mono">VS Code</span>
-              <span class="px-3 py-2 rounded-xl text-xs font-medium bg-slate-900/90 text-slate-100 border border-blue-500/40 font-mono flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>Git & GitHub</span>
-              <span class="px-3 py-2 rounded-xl text-xs font-medium bg-slate-900/90 text-slate-100 border border-blue-500/40 font-mono">Postman</span>
-              <span class="px-3 py-2 rounded-xl text-xs font-medium bg-slate-900/90 text-slate-100 border border-blue-500/40 font-mono">JWT & RBAC</span>
-              <span class="px-3 py-2 rounded-xl text-xs font-medium bg-slate-900/60 text-slate-300 border border-slate-800 font-mono">Vercel Deployment</span>
+              <span class="px-3 py-2 rounded-xl text-xs font-semibold bg-amber-50 text-amber-900 border border-amber-200 font-mono">Visual Studio</span>
+              <span class="px-3 py-2 rounded-xl text-xs font-semibold bg-amber-50 text-amber-900 border border-amber-200 font-mono">VS Code</span>
+              <span class="px-3 py-2 rounded-xl text-xs font-semibold bg-amber-50 text-amber-900 border border-amber-200 font-mono flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-600"></span>Git & GitHub</span>
+              <span class="px-3 py-2 rounded-xl text-xs font-semibold bg-amber-50 text-amber-900 border border-amber-200 font-mono">Postman</span>
+              <span class="px-3 py-2 rounded-xl text-xs font-semibold bg-amber-50 text-amber-900 border border-amber-200 font-mono">JWT & RBAC</span>
+              <span class="px-3 py-2 rounded-xl text-xs font-semibold bg-amber-50/70 text-amber-900 border border-amber-200 font-mono">Vercel Deployment</span>
             </div>
           </div>
         </div>
@@ -510,105 +487,110 @@
     </section>
 
     <!-- EXPERIENCE SECTION -->
-    <section id="experience" class="py-20 relative border-t border-slate-800/80">
+    <section id="experience" class="py-20 relative border-t border-slate-200/80 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <p class="text-blue-400 font-mono text-sm tracking-wider uppercase font-semibold">Career Timeline</p>
-          <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">Internship & Work <span class="gradient-text">Experience</span></h2>
-          <p class="text-slate-400 text-base sm:text-lg">
-            Hands-on professional experience developing software solutions in technology hubs like Techno Park, Trivandrum.
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-2">
+          <p class="text-blue-600 font-mono text-sm tracking-wider uppercase font-semibold">Industry Experience</p>
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900">Work & Internship <span class="gradient-text">Experience</span></h2>
+          <p class="text-slate-600 text-base sm:text-lg">
+            Practical experience engineering enterprise software systems in prominent IT hubs like Techno Park, Trivandrum.
           </p>
         </div>
 
-        <div class="relative border-l-2 border-slate-800 ml-4 md:ml-32 space-y-12">
+        <div class="relative border-l-2 border-slate-200 ml-4 md:ml-32 space-y-12">
           <!-- Faith Infotech -->
           <div class="relative pl-6 md:pl-10 group">
-            <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-900 border-2 border-blue-500 group-hover:bg-blue-500 group-hover:scale-125 transition-all duration-300 shadow-md shadow-blue-500/30"></div>
+            <div class="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-white border-4 border-blue-600 shadow-sm"></div>
 
-            <div class="glass-panel glass-panel-hover p-6 sm:p-8 rounded-2xl border border-slate-800/80 space-y-5">
-              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800/80 pb-4">
+            <div class="bg-slate-50/70 p-6 sm:p-8 rounded-2xl border border-slate-200 hover:border-slate-300 hover:bg-white hover:shadow-md transition-all duration-300 space-y-5">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-4">
                 <div>
-                  <span class="text-xs font-mono text-blue-400 uppercase tracking-wider font-semibold">Full-Stack Development</span>
-                  <h3 class="text-xl sm:text-2xl font-bold text-white tracking-tight mt-0.5">Full Stack Development Intern</h3>
-                  <p class="text-slate-300 font-medium text-base flex items-center gap-2 mt-1">
-                    <span class="text-cyan-400 font-semibold">Faith Infotech</span>
-                    <span class="text-slate-600">•</span>
-                    <span class="flex items-center gap-1 text-xs text-slate-400 font-normal">
-                      <i data-lucide="map-pin" class="w-3.5 h-3.5 text-slate-500"></i>
+                  <span class="text-xs font-mono uppercase tracking-wider font-bold px-2.5 py-0.5 rounded-md border bg-blue-50 text-blue-800 border-blue-200">
+                    Enterprise Full-Stack
+                  </span>
+                  <h3 class="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight mt-1.5">Full Stack Development Intern</h3>
+                  <p class="text-slate-700 font-semibold text-base flex items-center gap-2 mt-1">
+                    <span class="text-blue-700">Faith Infotech</span>
+                    <span class="text-slate-300">•</span>
+                    <span class="flex items-center gap-1 text-xs text-slate-500 font-normal">
+                      <i data-lucide="map-pin" class="w-3.5 h-3.5 text-slate-400"></i>
                       Techno Park, Trivandrum
                     </span>
                   </p>
                 </div>
-                <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-900 border border-slate-800 text-xs font-mono text-slate-300 self-start sm:self-auto">
-                  <i data-lucide="calendar" class="w-3.5 h-3.5 text-blue-400"></i>
+                <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white border border-slate-200 text-xs font-mono font-semibold text-slate-700 shadow-xs self-start sm:self-auto">
+                  <i data-lucide="calendar" class="w-3.5 h-3.5 text-blue-600"></i>
                   <span>August 2025 – April 2026</span>
                 </div>
               </div>
 
-              <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+              <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Worked on a full-stack application using .NET, SQL, and Angular, focusing on developing scalable backend services and dynamic frontend interfaces.
               </p>
 
               <div class="space-y-2.5">
-                <h4 class="text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold">Key Contributions:</h4>
-                <ul class="space-y-2 text-xs sm:text-sm text-slate-300">
-                  <li class="flex items-start gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5"></i><span>Involved in implementing RESTful APIs, database design, and role-based authentication (RBAC).</span></li>
-                  <li class="flex items-start gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5"></i><span>Contributed to core modules such as user management, data handling, and report generation.</span></li>
-                  <li class="flex items-start gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5"></i><span>Ensured efficient performance, clean architecture, and secure data transactions across the application.</span></li>
+                <h4 class="text-xs font-mono uppercase tracking-wider text-slate-500 font-bold">Key Contributions & Engineering Impact:</h4>
+                <ul class="space-y-2 text-xs sm:text-sm text-slate-700">
+                  <li class="flex items-start gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5"></i><span>Implemented RESTful Web APIs in ASP.NET Core, facilitating seamless communication between services and the Angular client.</span></li>
+                  <li class="flex items-start gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5"></i><span>Architected relational database schemas and optimized complex stored procedures in SQL Server for rapid query performance.</span></li>
+                  <li class="flex items-start gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5"></i><span>Engineered Role-Based Access Control (RBAC) and JWT token authentication to protect sensitive endpoints and user profiles.</span></li>
+                  <li class="flex items-start gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5"></i><span>Maintained Controller-Service-Repository architecture ensuring testability, clean code hygiene, and reusability.</span></li>
                 </ul>
               </div>
 
               <div class="pt-2 flex flex-wrap gap-2">
-                <span class="px-2.5 py-1 rounded-lg bg-slate-900/90 border border-slate-800 text-xs font-mono text-blue-300">.NET Core</span>
-                <span class="px-2.5 py-1 rounded-lg bg-slate-900/90 border border-slate-800 text-xs font-mono text-blue-300">SQL Server</span>
-                <span class="px-2.5 py-1 rounded-lg bg-slate-900/90 border border-slate-800 text-xs font-mono text-blue-300">Angular</span>
-                <span class="px-2.5 py-1 rounded-lg bg-slate-900/90 border border-slate-800 text-xs font-mono text-blue-300">REST APIs</span>
-                <span class="px-2.5 py-1 rounded-lg bg-slate-900/90 border border-slate-800 text-xs font-mono text-blue-300">RBAC</span>
+                <span class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 text-xs font-mono font-medium text-slate-800 shadow-xs">.NET Core</span>
+                <span class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 text-xs font-mono font-medium text-slate-800 shadow-xs">SQL Server</span>
+                <span class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 text-xs font-mono font-medium text-slate-800 shadow-xs">Angular</span>
+                <span class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 text-xs font-mono font-medium text-slate-800 shadow-xs">REST APIs</span>
+                <span class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 text-xs font-mono font-medium text-slate-800 shadow-xs">RBAC</span>
               </div>
             </div>
           </div>
 
           <!-- Shristi Innovative -->
           <div class="relative pl-6 md:pl-10 group">
-            <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-900 border-2 border-blue-500 group-hover:bg-blue-500 group-hover:scale-125 transition-all duration-300 shadow-md shadow-blue-500/30"></div>
+            <div class="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-white border-4 border-indigo-600 shadow-sm"></div>
 
-            <div class="glass-panel glass-panel-hover p-6 sm:p-8 rounded-2xl border border-slate-800/80 space-y-5">
-              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800/80 pb-4">
+            <div class="bg-slate-50/70 p-6 sm:p-8 rounded-2xl border border-slate-200 hover:border-slate-300 hover:bg-white hover:shadow-md transition-all duration-300 space-y-5">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-4">
                 <div>
-                  <span class="text-xs font-mono text-cyan-400 uppercase tracking-wider font-semibold">Web Development & React.js</span>
-                  <h3 class="text-xl sm:text-2xl font-bold text-white tracking-tight mt-0.5">Web Development Intern</h3>
-                  <p class="text-slate-300 font-medium text-base flex items-center gap-2 mt-1">
-                    <span class="text-cyan-400 font-semibold">Shristi Innovative</span>
-                    <span class="text-slate-600">•</span>
-                    <span class="flex items-center gap-1 text-xs text-slate-400 font-normal">
-                      <i data-lucide="map-pin" class="w-3.5 h-3.5 text-slate-500"></i>
+                  <span class="text-xs font-mono uppercase tracking-wider font-bold px-2.5 py-0.5 rounded-md border bg-indigo-50 text-indigo-800 border-indigo-200">
+                    Frontend Engineering
+                  </span>
+                  <h3 class="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight mt-1.5">Web Development Intern</h3>
+                  <p class="text-slate-700 font-semibold text-base flex items-center gap-2 mt-1">
+                    <span class="text-indigo-700">Shristi Innovative</span>
+                    <span class="text-slate-300">•</span>
+                    <span class="flex items-center gap-1 text-xs text-slate-500 font-normal">
+                      <i data-lucide="map-pin" class="w-3.5 h-3.5 text-slate-400"></i>
                       Techno Park, Trivandrum
                     </span>
                   </p>
                 </div>
-                <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-900 border border-slate-800 text-xs font-mono text-slate-300 self-start sm:self-auto">
-                  <i data-lucide="calendar" class="w-3.5 h-3.5 text-blue-400"></i>
+                <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white border border-slate-200 text-xs font-mono font-semibold text-slate-700 shadow-xs self-start sm:self-auto">
+                  <i data-lucide="calendar" class="w-3.5 h-3.5 text-blue-600"></i>
                   <span>July 2023 (1 Month)</span>
                 </div>
               </div>
 
-              <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
-                Gained hands-on experience in creating responsive and structured web pages using HTML, CSS, and basic JavaScript.
+              <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+                Gained hands-on experience in modern frontend development practices, focusing on component-based UI engineering and interactive interfaces.
               </p>
 
               <div class="space-y-2.5">
-                <h4 class="text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold">Key Contributions:</h4>
-                <ul class="space-y-2 text-xs sm:text-sm text-slate-300">
-                  <li class="flex items-start gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5"></i><span>Learned web development fundamentals and real-world project practices.</span></li>
-                  <li class="flex items-start gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5"></i><span>Worked on component-based development, state management, and building dynamic user interfaces using React.js.</span></li>
+                <h4 class="text-xs font-mono uppercase tracking-wider text-slate-500 font-bold">Key Contributions & Engineering Impact:</h4>
+                <ul class="space-y-2 text-xs sm:text-sm text-slate-700">
+                  <li class="flex items-start gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5"></i><span>Constructed responsive, pixel-perfect web interfaces using HTML5, CSS3, and modern JavaScript.</span></li>
+                  <li class="flex items-start gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5"></i><span>Built reusable React.js components incorporating state management and structured component hierarchies.</span></li>
                 </ul>
               </div>
 
               <div class="pt-2 flex flex-wrap gap-2">
-                <span class="px-2.5 py-1 rounded-lg bg-slate-900/90 border border-slate-800 text-xs font-mono text-blue-300">React.js</span>
-                <span class="px-2.5 py-1 rounded-lg bg-slate-900/90 border border-slate-800 text-xs font-mono text-blue-300">JavaScript</span>
-                <span class="px-2.5 py-1 rounded-lg bg-slate-900/90 border border-slate-800 text-xs font-mono text-blue-300">HTML5/CSS3</span>
-                <span class="px-2.5 py-1 rounded-lg bg-slate-900/90 border border-slate-800 text-xs font-mono text-blue-300">UI State</span>
+                <span class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 text-xs font-mono font-medium text-slate-800 shadow-xs">React.js</span>
+                <span class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 text-xs font-mono font-medium text-slate-800 shadow-xs">JavaScript</span>
+                <span class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 text-xs font-mono font-medium text-slate-800 shadow-xs">HTML5/CSS3</span>
+                <span class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 text-xs font-mono font-medium text-slate-800 shadow-xs">UI State</span>
               </div>
             </div>
           </div>
@@ -617,105 +599,105 @@
     </section>
 
     <!-- PROJECTS SECTION -->
-    <section id="projects" class="py-20 relative border-t border-slate-800/80">
+    <section id="projects" class="py-20 relative border-t border-slate-200/80 bg-slate-50/50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <p class="text-cyan-400 font-mono text-sm tracking-wider uppercase font-semibold">Real-World Impact</p>
-          <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">Featured <span class="gradient-text">Projects</span></h2>
-          <p class="text-slate-400 text-base sm:text-lg">
-            Practical demonstrations of full-stack engineering, from enterprise .NET backends to real-time mobile applications.
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-2">
+          <p class="text-blue-600 font-mono text-sm tracking-wider uppercase font-semibold">Featured Code</p>
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900">Featured <span class="gradient-text">Projects</span></h2>
+          <p class="text-slate-600 text-base sm:text-lg">
+            Real-world software architectures from enterprise web platforms to real-time mobile apps.
           </p>
         </div>
 
-        <div class="space-y-12">
+        <div class="space-y-10">
           <!-- Hospital Management System -->
-          <div class="glass-panel rounded-3xl border border-slate-800/90 overflow-hidden hover:border-slate-700 transition-all p-6 sm:p-10">
+          <div class="bg-white rounded-3xl border border-slate-200 shadow-sm hover:border-slate-300 hover:shadow-lg transition-all duration-300 p-6 sm:p-10">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
               <div class="lg:col-span-8 space-y-6">
                 <div class="flex flex-wrap items-center gap-2.5">
-                  <span class="px-3 py-1 rounded-full text-xs font-mono font-medium bg-blue-500/10 text-blue-400 border border-blue-500/30">
-                    Recent Project
+                  <span class="px-3 py-1 rounded-full text-xs font-mono font-bold border bg-blue-50 text-blue-700 border-blue-200">
+                    Featured Full-Stack Project
                   </span>
-                  <span class="text-xs font-mono text-slate-400">Full-Stack Enterprise System</span>
+                  <span class="text-xs font-mono font-medium text-slate-500">Full-Stack Enterprise Architecture</span>
                 </div>
 
                 <div class="space-y-2">
-                  <h3 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">Hospital Management System</h3>
-                  <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
-                    Developed a full-stack Hospital Management System using Angular, ASP.NET Core, and SQL Server with Role-Based Access Control (RBAC).
+                  <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">Hospital Management System</h3>
+                  <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                    Full-stack clinical management platform featuring role-based access control, appointment booking, and patient records administration.
                   </p>
                 </div>
 
                 <div class="space-y-3">
-                  <h4 class="text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold">Key Capabilities & Modules:</h4>
+                  <h4 class="text-xs font-mono uppercase tracking-wider text-slate-500 font-bold">Key Capabilities & Implementation Details:</h4>
                   <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-                    <div class="flex items-start gap-2 text-xs sm:text-sm text-slate-300 bg-slate-900/40 p-2.5 rounded-xl border border-slate-800/60">
-                      <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5"></i>
-                      <span>Patient registration, appointment scheduling & doctor consultation</span>
+                    <div class="flex items-start gap-2 text-xs sm:text-sm text-slate-700 bg-slate-50 p-3 rounded-xl border border-slate-200">
+                      <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5"></i>
+                      <span>Patient registration, clinical profile management & appointment booking</span>
                     </div>
-                    <div class="flex items-start gap-2 text-xs sm:text-sm text-slate-300 bg-slate-900/40 p-2.5 rounded-xl border border-slate-800/60">
-                      <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5"></i>
+                    <div class="flex items-start gap-2 text-xs sm:text-sm text-slate-700 bg-slate-50 p-3 rounded-xl border border-slate-200">
+                      <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5"></i>
                       <span>Implemented JWT authentication and Role-Based Access Control (RBAC)</span>
                     </div>
-                    <div class="flex items-start gap-2 text-xs sm:text-sm text-slate-300 bg-slate-900/40 p-2.5 rounded-xl border border-slate-800/60">
-                      <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5"></i>
+                    <div class="flex items-start gap-2 text-xs sm:text-sm text-slate-700 bg-slate-50 p-3 rounded-xl border border-slate-200">
+                      <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5"></i>
                       <span>Integrated RESTful APIs with Angular frontend for seamless communication</span>
                     </div>
-                    <div class="flex items-start gap-2 text-xs sm:text-sm text-slate-300 bg-slate-900/40 p-2.5 rounded-xl border border-slate-800/60">
-                      <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5"></i>
+                    <div class="flex items-start gap-2 text-xs sm:text-sm text-slate-700 bg-slate-50 p-3 rounded-xl border border-slate-200">
+                      <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5"></i>
                       <span>Layered architecture (Controller, Service, Repository) with stored procedures</span>
                     </div>
                   </div>
                 </div>
 
                 <div class="pt-2">
-                  <h4 class="text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold mb-2">Technologies Used:</h4>
+                  <h4 class="text-xs font-mono uppercase tracking-wider text-slate-500 font-bold mb-2">Technologies Used:</h4>
                   <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1 rounded-lg text-xs font-mono bg-slate-900 border border-slate-700/80 text-blue-300">C#</span>
-                    <span class="px-3 py-1 rounded-lg text-xs font-mono bg-slate-900 border border-slate-700/80 text-blue-300">ASP.NET Core Web API</span>
-                    <span class="px-3 py-1 rounded-lg text-xs font-mono bg-slate-900 border border-slate-700/80 text-blue-300">Angular</span>
-                    <span class="px-3 py-1 rounded-lg text-xs font-mono bg-slate-900 border border-slate-700/80 text-blue-300">SQL Server</span>
-                    <span class="px-3 py-1 rounded-lg text-xs font-mono bg-slate-900 border border-slate-700/80 text-blue-300">Entity Framework Core</span>
-                    <span class="px-3 py-1 rounded-lg text-xs font-mono bg-slate-900 border border-slate-700/80 text-blue-300">ADO.NET</span>
-                    <span class="px-3 py-1 rounded-lg text-xs font-mono bg-slate-900 border border-slate-700/80 text-blue-300">JWT</span>
+                    <span class="px-3 py-1 rounded-lg text-xs font-mono font-semibold bg-slate-100 border border-slate-200 text-slate-800">C#</span>
+                    <span class="px-3 py-1 rounded-lg text-xs font-mono font-semibold bg-slate-100 border border-slate-200 text-slate-800">ASP.NET Core Web API</span>
+                    <span class="px-3 py-1 rounded-lg text-xs font-mono font-semibold bg-slate-100 border border-slate-200 text-slate-800">Angular</span>
+                    <span class="px-3 py-1 rounded-lg text-xs font-mono font-semibold bg-slate-100 border border-slate-200 text-slate-800">SQL Server</span>
+                    <span class="px-3 py-1 rounded-lg text-xs font-mono font-semibold bg-slate-100 border border-slate-200 text-slate-800">Entity Framework Core</span>
+                    <span class="px-3 py-1 rounded-lg text-xs font-mono font-semibold bg-slate-100 border border-slate-200 text-slate-800">ADO.NET</span>
+                    <span class="px-3 py-1 rounded-lg text-xs font-mono font-semibold bg-slate-100 border border-slate-200 text-slate-800">JWT</span>
                   </div>
                 </div>
               </div>
 
               <!-- Right Card -->
-              <div class="lg:col-span-4 bg-slate-900/80 border border-slate-800 rounded-2xl p-6 space-y-6">
-                <div class="flex items-center gap-3 pb-3 border-b border-slate-800">
-                  <div class="p-2.5 rounded-xl bg-slate-950 border border-slate-800"><i data-lucide="activity" class="w-6 h-6 text-rose-400"></i></div>
+              <div class="lg:col-span-4 bg-slate-50 border border-slate-200 rounded-2xl p-6 space-y-6">
+                <div class="flex items-center gap-3 pb-3 border-b border-slate-200">
+                  <div class="p-2.5 rounded-xl bg-white border border-slate-200 shadow-xs"><i data-lucide="activity" class="w-6 h-6 text-blue-600"></i></div>
                   <div>
-                    <h4 class="text-sm font-semibold text-white">System Architecture</h4>
-                    <p class="text-[11px] text-slate-400 font-mono">Layered ASP.NET + Angular</p>
+                    <h4 class="text-sm font-bold text-slate-900">System Architecture</h4>
+                    <p class="text-[11px] text-slate-500 font-mono font-medium">Public Repository</p>
                   </div>
                 </div>
 
                 <div class="space-y-3 text-xs">
-                  <div class="flex items-center justify-between py-1.5 border-b border-slate-800/50">
-                    <span class="text-slate-400 font-mono">Backend:</span>
-                    <span class="text-slate-200 font-mono">ASP.NET Core Web API</span>
+                  <div class="flex items-center justify-between py-1.5 border-b border-slate-200">
+                    <span class="text-slate-500 font-mono">Backend:</span>
+                    <span class="text-slate-900 font-semibold font-mono">ASP.NET Core Web API</span>
                   </div>
-                  <div class="flex items-center justify-between py-1.5 border-b border-slate-800/50">
-                    <span class="text-slate-400 font-mono">Client:</span>
-                    <span class="text-slate-200 font-mono">Angular SPA</span>
+                  <div class="flex items-center justify-between py-1.5 border-b border-slate-200">
+                    <span class="text-slate-500 font-mono">Client:</span>
+                    <span class="text-slate-900 font-semibold font-mono">Angular SPA</span>
                   </div>
-                  <div class="flex items-center justify-between py-1.5 border-b border-slate-800/50">
-                    <span class="text-slate-400 font-mono">Database:</span>
-                    <span class="text-slate-200 font-mono">SQL Server + Stored Procs</span>
+                  <div class="flex items-center justify-between py-1.5 border-b border-slate-200">
+                    <span class="text-slate-500 font-mono">Database:</span>
+                    <span class="text-slate-900 font-semibold font-mono">SQL Server + EF Core</span>
                   </div>
-                  <div class="flex items-center justify-between py-1.5 border-b border-slate-800/50">
-                    <span class="text-slate-400 font-mono">Security:</span>
-                    <span class="text-slate-200 font-mono">JWT & RBAC</span>
+                  <div class="flex items-center justify-between py-1.5 border-b border-slate-200">
+                    <span class="text-slate-500 font-mono">Security:</span>
+                    <span class="text-slate-900 font-semibold font-mono">JWT & RBAC</span>
                   </div>
                 </div>
 
                 <div class="pt-2">
-                  <a href="https://github.com/Abinanth258/HospitalManagement" target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl font-semibold text-white bg-blue-600 hover:bg-blue-500 shadow-md shadow-blue-500/25 transition-all transform hover:-translate-y-0.5">
+                  <a href="https://github.com/Abinanth258/HospitalManagement" target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl font-semibold text-white bg-blue-600 hover:bg-blue-700 shadow-sm hover:shadow transition-all transform hover:-translate-y-0.5">
                     <i data-lucide="github" class="w-4 h-4"></i>
                     <span>View on GitHub</span>
-                    <i data-lucide="arrow-up-right" class="w-4 h-4 ml-0.5 opacity-70"></i>
+                    <i data-lucide="arrow-up-right" class="w-4 h-4 ml-0.5 opacity-80"></i>
                   </a>
                 </div>
               </div>
@@ -723,91 +705,91 @@
           </div>
 
           <!-- RideCircle -->
-          <div class="glass-panel rounded-3xl border border-slate-800/90 overflow-hidden hover:border-slate-700 transition-all p-6 sm:p-10">
+          <div class="bg-white rounded-3xl border border-slate-200 shadow-sm hover:border-slate-300 hover:shadow-lg transition-all duration-300 p-6 sm:p-10">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
               <div class="lg:col-span-8 space-y-6">
                 <div class="flex flex-wrap items-center gap-2.5">
-                  <span class="px-3 py-1 rounded-full text-xs font-mono font-medium bg-cyan-500/10 text-cyan-400 border border-cyan-500/30">
-                    Final Year Project
+                  <span class="px-3 py-1 rounded-full text-xs font-mono font-bold border bg-indigo-50 text-indigo-700 border-indigo-200">
+                    Final Year Academic Project
                   </span>
-                  <span class="text-xs font-mono text-slate-400">Mobile Cross-Platform Application</span>
+                  <span class="text-xs font-mono font-medium text-slate-500">Cross-Platform Mobile Application</span>
                 </div>
 
                 <div class="space-y-2">
-                  <h3 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">RideCircle – Carpooling Application</h3>
-                  <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
-                    Developed a cross-platform carpooling mobile app using React Native and Firebase with live location tracking and real-time synchronization.
+                  <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">RideCircle – Carpooling Application</h3>
+                  <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                    Cross-platform mobile carpooling application connecting drivers and passengers with live GPS tracking, route matching, and real-time chat.
                   </p>
                 </div>
 
                 <div class="space-y-3">
-                  <h4 class="text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold">Key Capabilities & Features:</h4>
+                  <h4 class="text-xs font-mono uppercase tracking-wider text-slate-500 font-bold">Key Capabilities & Features:</h4>
                   <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-                    <div class="flex items-start gap-2 text-xs sm:text-sm text-slate-300 bg-slate-900/40 p-2.5 rounded-xl border border-slate-800/60">
-                      <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5"></i>
-                      <span>Firebase Authentication, ride creation, booking & ride management</span>
+                    <div class="flex items-start gap-2 text-xs sm:text-sm text-slate-700 bg-slate-50 p-3 rounded-xl border border-slate-200">
+                      <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5"></i>
+                      <span>Firebase Authentication with verified rider and driver profiles</span>
                     </div>
-                    <div class="flex items-start gap-2 text-xs sm:text-sm text-slate-300 bg-slate-900/40 p-2.5 rounded-xl border border-slate-800/60">
-                      <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5"></i>
+                    <div class="flex items-start gap-2 text-xs sm:text-sm text-slate-700 bg-slate-50 p-3 rounded-xl border border-slate-200">
+                      <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5"></i>
                       <span>Integrated Google Maps API for live GPS tracking & turn-by-turn routing</span>
                     </div>
-                    <div class="flex items-start gap-2 text-xs sm:text-sm text-slate-300 bg-slate-900/40 p-2.5 rounded-xl border border-slate-800/60">
-                      <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5"></i>
+                    <div class="flex items-start gap-2 text-xs sm:text-sm text-slate-700 bg-slate-50 p-3 rounded-xl border border-slate-200">
+                      <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5"></i>
                       <span>Built in-app chat, automated fare calculation & ride history</span>
                     </div>
-                    <div class="flex items-start gap-2 text-xs sm:text-sm text-slate-300 bg-slate-900/40 p-2.5 rounded-xl border border-slate-800/60">
-                      <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5"></i>
+                    <div class="flex items-start gap-2 text-xs sm:text-sm text-slate-700 bg-slate-50 p-3 rounded-xl border border-slate-200">
+                      <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5"></i>
                       <span>Firebase Firestore & Realtime DB for secure real-time synchronization</span>
                     </div>
                   </div>
                 </div>
 
                 <div class="pt-2">
-                  <h4 class="text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold mb-2">Technologies Used:</h4>
+                  <h4 class="text-xs font-mono uppercase tracking-wider text-slate-500 font-bold mb-2">Technologies Used:</h4>
                   <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1 rounded-lg text-xs font-mono bg-slate-900 border border-slate-700/80 text-blue-300">React Native</span>
-                    <span class="px-3 py-1 rounded-lg text-xs font-mono bg-slate-900 border border-slate-700/80 text-blue-300">Firebase Auth</span>
-                    <span class="px-3 py-1 rounded-lg text-xs font-mono bg-slate-900 border border-slate-700/80 text-blue-300">Cloud Firestore</span>
-                    <span class="px-3 py-1 rounded-lg text-xs font-mono bg-slate-900 border border-slate-700/80 text-blue-300">Google Maps API</span>
-                    <span class="px-3 py-1 rounded-lg text-xs font-mono bg-slate-900 border border-slate-700/80 text-blue-300">JavaScript</span>
+                    <span class="px-3 py-1 rounded-lg text-xs font-mono font-semibold bg-slate-100 border border-slate-200 text-slate-800">React Native</span>
+                    <span class="px-3 py-1 rounded-lg text-xs font-mono font-semibold bg-slate-100 border border-slate-200 text-slate-800">Firebase Auth</span>
+                    <span class="px-3 py-1 rounded-lg text-xs font-mono font-semibold bg-slate-100 border border-slate-200 text-slate-800">Cloud Firestore</span>
+                    <span class="px-3 py-1 rounded-lg text-xs font-mono font-semibold bg-slate-100 border border-slate-200 text-slate-800">Google Maps API</span>
+                    <span class="px-3 py-1 rounded-lg text-xs font-mono font-semibold bg-slate-100 border border-slate-200 text-slate-800">JavaScript</span>
                   </div>
                 </div>
               </div>
 
               <!-- Right Card -->
-              <div class="lg:col-span-4 bg-slate-900/80 border border-slate-800 rounded-2xl p-6 space-y-6">
-                <div class="flex items-center gap-3 pb-3 border-b border-slate-800">
-                  <div class="p-2.5 rounded-xl bg-slate-950 border border-slate-800"><i data-lucide="car" class="w-6 h-6 text-cyan-400"></i></div>
+              <div class="lg:col-span-4 bg-slate-50 border border-slate-200 rounded-2xl p-6 space-y-6">
+                <div class="flex items-center gap-3 pb-3 border-b border-slate-200">
+                  <div class="p-2.5 rounded-xl bg-white border border-slate-200 shadow-xs"><i data-lucide="car" class="w-6 h-6 text-indigo-600"></i></div>
                   <div>
-                    <h4 class="text-sm font-semibold text-white">System Architecture</h4>
-                    <p class="text-[11px] text-slate-400 font-mono">Mobile App + Cloud Realtime</p>
+                    <h4 class="text-sm font-bold text-slate-900">System Architecture</h4>
+                    <p class="text-[11px] text-slate-500 font-mono font-medium">Cross-Platform Mobile</p>
                   </div>
                 </div>
 
                 <div class="space-y-3 text-xs">
-                  <div class="flex items-center justify-between py-1.5 border-b border-slate-800/50">
-                    <span class="text-slate-400 font-mono">Platform:</span>
-                    <span class="text-slate-200 font-mono">Cross-Platform Mobile</span>
+                  <div class="flex items-center justify-between py-1.5 border-b border-slate-200">
+                    <span class="text-slate-500 font-mono">Platform:</span>
+                    <span class="text-slate-900 font-semibold font-mono">React Native</span>
                   </div>
-                  <div class="flex items-center justify-between py-1.5 border-b border-slate-800/50">
-                    <span class="text-slate-400 font-mono">Maps & GPS:</span>
-                    <span class="text-slate-200 font-mono">Google Maps API</span>
+                  <div class="flex items-center justify-between py-1.5 border-b border-slate-200">
+                    <span class="text-slate-500 font-mono">Maps Engine:</span>
+                    <span class="text-slate-900 font-semibold font-mono">Google Maps API</span>
                   </div>
-                  <div class="flex items-center justify-between py-1.5 border-b border-slate-800/50">
-                    <span class="text-slate-400 font-mono">Database:</span>
-                    <span class="text-slate-200 font-mono">Firebase Firestore</span>
+                  <div class="flex items-center justify-between py-1.5 border-b border-slate-200">
+                    <span class="text-slate-500 font-mono">Database:</span>
+                    <span class="text-slate-900 font-semibold font-mono">Cloud Firestore</span>
                   </div>
-                  <div class="flex items-center justify-between py-1.5 border-b border-slate-800/50">
-                    <span class="text-slate-400 font-mono">Chat Engine:</span>
-                    <span class="text-slate-200 font-mono">Realtime Database</span>
+                  <div class="flex items-center justify-between py-1.5 border-b border-slate-200">
+                    <span class="text-slate-500 font-mono">Auth:</span>
+                    <span class="text-slate-900 font-semibold font-mono">Firebase Auth</span>
                   </div>
                 </div>
 
                 <div class="pt-2">
-                  <a href="https://github.com/Abinanth258/ridecircle" target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl font-semibold text-white bg-blue-600 hover:bg-blue-500 shadow-md shadow-blue-500/25 transition-all transform hover:-translate-y-0.5">
+                  <a href="https://github.com/Abinanth258/ridecircle" target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl font-semibold text-white bg-blue-600 hover:bg-blue-700 shadow-sm hover:shadow transition-all transform hover:-translate-y-0.5">
                     <i data-lucide="github" class="w-4 h-4"></i>
                     <span>View on GitHub</span>
-                    <i data-lucide="arrow-up-right" class="w-4 h-4 ml-0.5 opacity-70"></i>
+                    <i data-lucide="arrow-up-right" class="w-4 h-4 ml-0.5 opacity-80"></i>
                   </a>
                 </div>
               </div>
@@ -818,65 +800,65 @@
     </section>
 
     <!-- CONTACT SECTION -->
-    <section id="contact" class="py-20 relative border-t border-slate-800/80">
+    <section id="contact" class="py-20 relative border-t border-slate-200/80 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <p class="text-blue-400 font-mono text-sm tracking-wider uppercase font-semibold">Get In Touch</p>
-          <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">Let's Build Something <span class="gradient-text">Great Together</span></h2>
-          <p class="text-slate-400 text-base sm:text-lg">
-            Have a project in mind, an open software developer role, or want to connect? Reach out directly or send a message below.
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-2">
+          <p class="text-blue-600 font-mono text-sm tracking-wider uppercase font-semibold">Contact</p>
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900">Let's <span class="gradient-text">Connect</span></h2>
+          <p class="text-slate-600 text-base sm:text-lg">
+            Whether you have a software engineering opportunity, a project to discuss, or want to connect, feel free to reach out.
           </p>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
           <!-- Left Column -->
           <div class="lg:col-span-5 space-y-6">
-            <div class="glass-panel p-6 sm:p-8 rounded-2xl space-y-6 border border-slate-800">
-              <h3 class="text-xl font-bold text-white tracking-tight">Contact Information</h3>
-              <p class="text-sm text-slate-400 leading-relaxed">
-                Feel free to reach out directly via email, phone, or LinkedIn. I typically respond within 24 hours.
+            <div class="bg-slate-50 border border-slate-200 p-6 sm:p-8 rounded-2xl space-y-6 shadow-sm">
+              <h3 class="text-xl font-bold text-slate-900 tracking-tight">Contact Details</h3>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                I am actively seeking software development roles. Feel free to reach out through email, phone, or LinkedIn.
               </p>
 
-              <div class="space-y-4">
-                <div class="flex items-start justify-between p-3.5 rounded-xl bg-slate-900/80 border border-slate-800">
+              <div class="space-y-3.5">
+                <div class="flex items-start justify-between p-3.5 rounded-xl bg-white border border-slate-200 shadow-xs">
                   <div class="flex items-center gap-3">
-                    <div class="p-2.5 rounded-lg bg-blue-600/10 text-blue-400"><i data-lucide="mail" class="w-5 h-5"></i></div>
+                    <div class="p-2.5 rounded-lg bg-blue-50 text-blue-700 border border-blue-100"><i data-lucide="mail" class="w-5 h-5"></i></div>
                     <div>
-                      <p class="text-xs text-slate-400 font-mono">Email Address</p>
-                      <a href="mailto:abinanh258@gmail.com" class="text-sm font-medium text-slate-200 hover:text-blue-400 transition-colors">abinanh258@gmail.com</a>
+                      <p class="text-xs text-slate-500 font-medium">Email Address</p>
+                      <a href="mailto:abinanh258@gmail.com" class="text-sm font-semibold text-slate-900 hover:text-blue-600 transition-colors">abinanh258@gmail.com</a>
                     </div>
                   </div>
-                  <button onclick="copyEmail()" class="p-2 text-slate-400 hover:text-white rounded-lg transition-colors cursor-pointer" title="Copy Email">
+                  <button onclick="copyEmail()" class="p-2 text-slate-500 hover:text-slate-900 hover:bg-slate-100 rounded-lg transition-colors cursor-pointer" title="Copy Email">
                     <i data-lucide="copy" class="w-4 h-4"></i>
                   </button>
                 </div>
 
-                <div class="flex items-center gap-3 p-3.5 rounded-xl bg-slate-900/80 border border-slate-800">
-                  <div class="p-2.5 rounded-lg bg-emerald-600/10 text-emerald-400"><i data-lucide="phone" class="w-5 h-5"></i></div>
+                <div class="flex items-center gap-3 p-3.5 rounded-xl bg-white border border-slate-200 shadow-xs">
+                  <div class="p-2.5 rounded-lg bg-emerald-50 text-emerald-700 border border-emerald-100"><i data-lucide="phone" class="w-5 h-5"></i></div>
                   <div>
-                    <p class="text-xs text-slate-400 font-mono">Phone / WhatsApp</p>
-                    <a href="tel:+919444685963" class="text-sm font-medium text-slate-200 hover:text-emerald-400 transition-colors">+91 9444685963</a>
+                    <p class="text-xs text-slate-500 font-medium">Phone / WhatsApp</p>
+                    <a href="tel:+919444685963" class="text-sm font-semibold text-slate-900 hover:text-emerald-700 transition-colors">+91 9444685963</a>
                   </div>
                 </div>
 
-                <div class="flex items-start gap-3 p-3.5 rounded-xl bg-slate-900/80 border border-slate-800">
-                  <div class="p-2.5 rounded-lg bg-amber-600/10 text-amber-400"><i data-lucide="map-pin" class="w-5 h-5"></i></div>
+                <div class="flex items-start gap-3 p-3.5 rounded-xl bg-white border border-slate-200 shadow-xs">
+                  <div class="p-2.5 rounded-lg bg-amber-50 text-amber-700 border border-amber-100"><i data-lucide="map-pin" class="w-5 h-5"></i></div>
                   <div>
-                    <p class="text-xs text-slate-400 font-mono">Location</p>
-                    <p class="text-sm font-medium text-slate-200">1-74/3 Durga nagar, ramanparambu, thuckalay, nagercoil, India</p>
+                    <p class="text-xs text-slate-500 font-medium">Location</p>
+                    <p class="text-sm font-semibold text-slate-900">Nagercoil / Thuckalay, Tamil Nadu, India</p>
                   </div>
                 </div>
               </div>
 
-              <div class="pt-4 border-t border-slate-800">
-                <p class="text-xs font-mono text-slate-400 uppercase tracking-wider mb-3">Online Profiles</p>
+              <div class="pt-4 border-t border-slate-200">
+                <p class="text-xs font-mono text-slate-500 uppercase tracking-wider mb-3 font-semibold">Online Profiles</p>
                 <div class="flex items-center gap-3">
-                  <a href="https://www.linkedin.com/in/abinanth-k-s-8036a0342" target="_blank" class="flex-1 flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-slate-900 border border-slate-800 text-xs font-medium text-slate-300 hover:text-white hover:border-blue-500/50 transition-colors">
-                    <i data-lucide="linkedin" class="w-4 h-4 text-blue-400"></i>
+                  <a href="https://www.linkedin.com/in/abinanth-k-s-8036a0342" target="_blank" class="flex-1 flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-white border border-slate-200 text-xs font-semibold text-slate-700 hover:text-blue-700 hover:border-blue-300 shadow-xs transition-colors">
+                    <i data-lucide="linkedin" class="w-4 h-4 text-blue-600"></i>
                     <span>LinkedIn</span>
                   </a>
-                  <a href="https://github.com/Abinanth258" target="_blank" class="flex-1 flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-slate-900 border border-slate-800 text-xs font-medium text-slate-300 hover:text-white transition-colors">
-                    <i data-lucide="github" class="w-4 h-4"></i>
+                  <a href="https://github.com/Abinanth258" target="_blank" class="flex-1 flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-white border border-slate-200 text-xs font-semibold text-slate-700 hover:text-slate-900 hover:border-slate-300 shadow-xs transition-colors">
+                    <i data-lucide="github" class="w-4 h-4 text-slate-900"></i>
                     <span>GitHub</span>
                   </a>
                 </div>
@@ -886,34 +868,34 @@
 
           <!-- Right Column: Interactive Form -->
           <div class="lg:col-span-7">
-            <div class="glass-panel p-6 sm:p-8 rounded-2xl border border-slate-800 space-y-6">
+            <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
               <div class="space-y-1">
-                <h3 class="text-xl font-bold text-white tracking-tight flex items-center gap-2">
-                  <i data-lucide="message-square" class="w-5 h-5 text-blue-400"></i>
+                <h3 class="text-xl font-bold text-slate-900 tracking-tight flex items-center gap-2">
+                  <i data-lucide="message-square" class="w-5 h-5 text-blue-600"></i>
                   Send a Direct Message
                 </h3>
-                <p class="text-xs sm:text-sm text-slate-400">
-                  Type your message below. It will open directly in Gmail or your preferred mail client with everything pre-filled.
+                <p class="text-xs sm:text-sm text-slate-500">
+                  Type your message below. It will open directly in Gmail or your preferred mail client with everything filled in.
                 </p>
               </div>
 
               <!-- Options Action Panel shown on send -->
-              <div id="send-options-card" class="hidden p-4 rounded-xl bg-slate-900 border border-blue-500/40 space-y-3">
-                <div class="flex items-center gap-2 text-emerald-400 text-sm font-semibold">
-                  <i data-lucide="check" class="w-4 h-4"></i>
-                  <span>Message prepared! Choose your sending method:</span>
+              <div id="send-options-card" class="hidden p-4 rounded-xl bg-blue-50/70 border border-blue-200 space-y-3">
+                <div class="flex items-center gap-2 text-blue-900 text-sm font-bold">
+                  <i data-lucide="check" class="w-4 h-4 text-blue-600"></i>
+                  <span>Message formatted! Choose your sending method:</span>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 pt-1">
-                  <a id="btn-open-gmail" href="#" target="_blank" class="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-semibold rounded-lg bg-blue-600 hover:bg-blue-500 text-white shadow-sm transition-all">
+                  <a id="btn-open-gmail" href="#" target="_blank" class="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-bold rounded-lg bg-blue-600 hover:bg-blue-700 text-white shadow-xs transition-all">
                     <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                     <span>Open in Gmail</span>
                   </a>
-                  <a id="btn-open-mailto" href="#" class="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-semibold rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition-all">
-                    <i data-lucide="mail" class="w-3.5 h-3.5 text-blue-400"></i>
-                    <span>Mail App</span>
+                  <a id="btn-open-mailto" href="#" class="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-semibold rounded-lg bg-white hover:bg-slate-50 text-slate-800 border border-slate-200 shadow-xs transition-all">
+                    <i data-lucide="mail" class="w-3.5 h-3.5 text-blue-600"></i>
+                    <span>Default Mail App</span>
                   </a>
-                  <button type="button" onclick="copyPreparedMessage()" class="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-semibold rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition-all cursor-pointer">
-                    <i data-lucide="copy" class="w-3.5 h-3.5 text-slate-400"></i>
+                  <button type="button" onclick="copyPreparedMessage()" class="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-semibold rounded-lg bg-white hover:bg-slate-50 text-slate-800 border border-slate-200 shadow-xs transition-all cursor-pointer">
+                    <i data-lucide="copy" class="w-3.5 h-3.5 text-slate-500"></i>
                     <span id="btn-copy-label">Copy Text</span>
                   </button>
                 </div>
@@ -922,26 +904,26 @@
               <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div class="space-y-1.5">
-                    <label class="text-xs font-mono text-slate-300">Your Name *</label>
-                    <input id="form-name" type="text" required placeholder="Your name" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 focus:border-blue-500 focus:outline-none text-sm text-white placeholder-slate-500">
+                    <label class="text-xs font-semibold text-slate-700">Your Name *</label>
+                    <input id="form-name" type="text" required placeholder="Your name" class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-100 text-sm text-slate-900 placeholder-slate-400">
                   </div>
                   <div class="space-y-1.5">
-                    <label class="text-xs font-mono text-slate-300">Your Email *</label>
-                    <input id="form-email" type="email" required placeholder="Your email address" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 focus:border-blue-500 focus:outline-none text-sm text-white placeholder-slate-500">
+                    <label class="text-xs font-semibold text-slate-700">Your Email *</label>
+                    <input id="form-email" type="email" required placeholder="Your email address" class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-100 text-sm text-slate-900 placeholder-slate-400">
                   </div>
                 </div>
 
                 <div class="space-y-1.5">
-                  <label class="text-xs font-mono text-slate-300">Subject *</label>
-                  <input id="form-subject" type="text" required placeholder="Subject of your message" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 focus:border-blue-500 focus:outline-none text-sm text-white placeholder-slate-500">
+                  <label class="text-xs font-semibold text-slate-700">Subject *</label>
+                  <input id="form-subject" type="text" required placeholder="Subject of your message" class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-100 text-sm text-slate-900 placeholder-slate-400">
                 </div>
 
                 <div class="space-y-1.5">
-                  <label class="text-xs font-mono text-slate-300">Your Message *</label>
-                  <textarea id="form-message" rows="5" required placeholder="Write your message here..." class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 focus:border-blue-500 focus:outline-none text-sm text-white placeholder-slate-500 resize-none"></textarea>
+                  <label class="text-xs font-semibold text-slate-700">Your Message *</label>
+                  <textarea id="form-message" rows="5" required placeholder="Write your message here..." class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-100 text-sm text-slate-900 placeholder-slate-400 resize-none"></textarea>
                 </div>
 
-                <button type="submit" class="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-white bg-blue-600 hover:bg-blue-500 shadow-lg shadow-blue-500/25 transition-all transform hover:-translate-y-0.5 cursor-pointer">
+                <button type="submit" class="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-bold text-white bg-blue-600 hover:bg-blue-700 shadow-sm hover:shadow transition-all transform hover:-translate-y-0.5 cursor-pointer">
                   <i data-lucide="send" class="w-4 h-4"></i>
                   <span>Send Message</span>
                 </button>
@@ -953,32 +935,32 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="border-t border-slate-800/80 bg-[#070a12] py-12 relative z-10">
+    <footer class="border-t border-slate-200 bg-white py-12 relative z-10">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800/60">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-100">
           <div class="flex items-center gap-3">
-            <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-blue-600 to-cyan-400 p-[1.5px]">
-              <div class="w-full h-full bg-[#070a12] rounded-[10px] flex items-center justify-center font-bold text-white text-sm font-mono">AK</div>
+            <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-600 p-[1.5px] shadow-xs">
+              <div class="w-full h-full bg-white rounded-[10px] flex items-center justify-center font-bold text-blue-700 text-sm font-mono">AK</div>
             </div>
             <div>
-              <p class="font-bold text-white tracking-tight">Abinanth K S</p>
-              <p class="text-xs text-slate-400 font-mono">Full-Stack Developer • .NET & Modern Web</p>
+              <p class="font-bold text-slate-900 tracking-tight">Abinanth K S</p>
+              <p class="text-xs text-slate-500 font-medium">Full-Stack Developer • .NET & Modern Web</p>
             </div>
           </div>
 
-          <div class="flex items-center gap-4 text-slate-400">
-            <a href="https://github.com/Abinanth258" target="_blank" class="p-2 rounded-lg hover:text-white hover:bg-slate-800 transition-colors"><i data-lucide="github" class="w-5 h-5"></i></a>
-            <a href="https://www.linkedin.com/in/abinanth-k-s-8036a0342" target="_blank" class="p-2 rounded-lg hover:text-blue-400 hover:bg-slate-800 transition-colors"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
-            <a href="mailto:abinanh258@gmail.com" class="p-2 rounded-lg hover:text-rose-400 hover:bg-slate-800 transition-colors"><i data-lucide="mail" class="w-5 h-5"></i></a>
+          <div class="flex items-center gap-3 text-slate-600">
+            <a href="https://github.com/Abinanth258" target="_blank" class="p-2 rounded-lg hover:text-slate-900 hover:bg-slate-100 transition-colors"><i data-lucide="github" class="w-5 h-5"></i></a>
+            <a href="https://www.linkedin.com/in/abinanth-k-s-8036a0342" target="_blank" class="p-2 rounded-lg hover:text-blue-600 hover:bg-blue-50 transition-colors"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+            <a href="mailto:abinanh258@gmail.com" class="p-2 rounded-lg hover:text-rose-600 hover:bg-rose-50 transition-colors"><i data-lucide="mail" class="w-5 h-5"></i></a>
           </div>
         </div>
 
-        <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 font-mono">
+        <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 font-medium">
           <p>© 2026 Abinanth K S. All rights reserved.</p>
-          <p class="flex items-center gap-1">
+          <p class="flex items-center gap-1.5">
             <span>Built with Next.js, TypeScript & Tailwind CSS</span>
             <span>•</span>
-            <span class="text-slate-400">Deployed on Vercel</span>
+            <span class="text-slate-700 font-semibold">Deployed on Vercel</span>
           </p>
         </div>
       </div>
@@ -988,58 +970,53 @@
 
   <!-- RESUME MODAL DIALOG -->
   <div id="resume-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 md:p-8">
-    <!-- Backdrop -->
-    <div onclick="closeResumeModal()" class="fixed inset-0 bg-black/80 backdrop-blur-md transition-opacity"></div>
+    <div onclick="closeResumeModal()" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm transition-opacity"></div>
 
-    <!-- Modal Content -->
-    <div class="relative w-full max-w-5xl h-[90vh] bg-slate-900 border border-slate-700/80 rounded-2xl shadow-2xl flex flex-col z-10 overflow-hidden">
+    <div class="relative w-full max-w-5xl h-[90vh] bg-white border border-slate-200 rounded-2xl shadow-2xl flex flex-col z-10 overflow-hidden">
       <!-- Toolbar Header -->
-      <div class="flex items-center justify-between px-5 py-3.5 border-b border-slate-800 bg-slate-950/80 backdrop-blur-md">
+      <div class="flex items-center justify-between px-5 py-3.5 border-b border-slate-200 bg-slate-50">
         <div class="flex items-center gap-2.5">
-          <div class="p-2 rounded-lg bg-blue-600/10 text-blue-400">
+          <div class="p-2 rounded-lg bg-blue-100 text-blue-700">
             <i data-lucide="file-text" class="w-5 h-5"></i>
           </div>
           <div>
-            <h3 class="text-base font-bold text-white tracking-tight">Abinanth K S — Resume</h3>
-            <p class="text-xs text-slate-400 font-mono">Full-Stack Developer • Anna University (2025)</p>
+            <h3 class="text-base font-bold text-slate-900 tracking-tight">Abinanth K S — Resume</h3>
+            <p class="text-xs text-slate-500 font-medium">Full-Stack Developer • Anna University (2025)</p>
           </div>
         </div>
 
         <div class="flex items-center gap-2">
-          <a href="./public/resume.pdf" download="Abinanth_KS_Resume.pdf" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg bg-blue-600 hover:bg-blue-500 text-white shadow-sm transition-all" title="Download PDF">
+          <a href="./public/resume.pdf" download="Abinanth_KS_Resume.pdf" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg bg-blue-600 hover:bg-blue-700 text-white shadow-xs transition-all" title="Download PDF">
             <i data-lucide="download" class="w-3.5 h-3.5"></i>
             <span class="hidden sm:inline">Download PDF</span>
           </a>
 
-          <a href="./public/resume.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition-all" title="Open in New Tab">
-            <i data-lucide="external-link" class="w-3.5 h-3.5 text-slate-400"></i>
+          <a href="./public/resume.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 shadow-xs transition-all" title="Open in New Tab">
+            <i data-lucide="external-link" class="w-3.5 h-3.5 text-slate-500"></i>
             <span class="hidden sm:inline">Open in Tab</span>
           </a>
 
-          <button onclick="closeResumeModal()" class="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors ml-1" aria-label="Close modal">
+          <button onclick="closeResumeModal()" class="p-1.5 rounded-lg text-slate-500 hover:text-slate-900 hover:bg-slate-100 transition-colors ml-1" aria-label="Close modal">
             <i data-lucide="x" class="w-5 h-5"></i>
           </button>
         </div>
       </div>
 
-      <!-- PDF Viewer Body -->
-      <div class="relative flex-1 bg-slate-950 overflow-hidden">
+      <!-- PDF Body -->
+      <div class="relative flex-1 bg-slate-100 overflow-hidden">
         <object data="./public/resume.pdf" type="application/pdf" class="w-full h-full">
-          <!-- Fallback view if browser PDF plugin is unavailable -->
-          <div class="h-full flex flex-col items-center justify-center p-8 text-center space-y-4">
-            <i data-lucide="file-text" class="w-16 h-16 text-blue-400 opacity-60"></i>
+          <div class="h-full flex flex-col items-center justify-center p-8 text-center space-y-4 bg-white">
+            <i data-lucide="file-text" class="w-16 h-16 text-blue-600 opacity-80"></i>
             <div class="space-y-1">
-              <h4 class="text-lg font-bold text-white">Resume Document Ready</h4>
-              <p class="text-sm text-slate-400 max-w-md">
-                Click below to download or view the resume directly.
-              </p>
+              <h4 class="text-lg font-bold text-slate-900">Resume Document Ready</h4>
+              <p class="text-sm text-slate-600 max-w-md">Click below to download or view the resume directly.</p>
             </div>
             <div class="flex items-center gap-3 pt-2">
-              <a href="./public/resume.pdf" download="Abinanth_KS_Resume.pdf" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-medium text-sm shadow-md">
+              <a href="./public/resume.pdf" download="Abinanth_KS_Resume.pdf" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm shadow-sm">
                 <i data-lucide="download" class="w-4 h-4"></i>
                 <span>Download Resume PDF</span>
               </a>
-              <a href="./public/resume.pdf" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-medium text-sm border border-slate-700">
+              <a href="./public/resume.pdf" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white hover:bg-slate-50 text-slate-700 font-semibold text-sm border border-slate-200 shadow-sm">
                 <i data-lucide="external-link" class="w-4 h-4"></i>
                 <span>Open in New Tab</span>
               </a>
@@ -1048,8 +1025,7 @@
         </object>
       </div>
 
-      <!-- Footer Info -->
-      <div class="px-5 py-2.5 border-t border-slate-800 bg-slate-950 flex items-center justify-between text-[11px] text-slate-500 font-mono">
+      <div class="px-5 py-2.5 border-t border-slate-200 bg-slate-50 flex items-center justify-between text-[11px] text-slate-500 font-mono">
         <span>Official Resume of Abinanth K S</span>
         <span>Click outside or press ESC to close</span>
       </div>
@@ -1057,10 +1033,8 @@
   </div>
 
   <script>
-    // Initialize Lucide Icons
     lucide.createIcons();
 
-    // Mobile menu toggle
     const toggle = document.getElementById('mobile-toggle');
     const menu = document.getElementById('mobile-menu');
     toggle.addEventListener('click', () => {
@@ -1073,13 +1047,11 @@
       });
     });
 
-    // Copy Email
     function copyEmail() {
       navigator.clipboard.writeText("abinanh258@gmail.com");
       alert("Email address copied to clipboard: abinanh258@gmail.com");
     }
 
-    // Resume Modal Open/Close
     function openResumeModal() {
       document.getElementById('resume-modal').classList.remove('hidden');
       document.body.style.overflow = 'hidden';
@@ -1091,15 +1063,12 @@
       document.body.style.overflow = 'unset';
     }
 
-    // Close on Escape key
     window.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') closeResumeModal();
     });
 
-    // Prepared message text storage
     let preparedMessageText = "";
 
-    // Handle Form Submit
     function handleFormSubmit(e) {
       e.preventDefault();
       const name = document.getElementById('form-name').value;
@@ -1115,13 +1084,11 @@
       const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=abinanh258@gmail.com&su=${gmailSu}&body=${gmailBody}`;
       const mailtoUrl = `mailto:abinanh258@gmail.com?subject=${gmailSu}&body=${gmailBody}`;
 
-      // Update options card
       document.getElementById('btn-open-gmail').href = gmailUrl;
       document.getElementById('btn-open-mailto').href = mailtoUrl;
       document.getElementById('send-options-card').classList.remove('hidden');
       lucide.createIcons();
 
-      // Automatically open Gmail Web compose in a new tab
       window.open(gmailUrl, '_blank');
     }
 
